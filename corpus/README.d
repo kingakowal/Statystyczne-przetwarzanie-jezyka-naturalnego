@@ -1,0 +1,1 @@
+This folder stores input corpora (text files).
