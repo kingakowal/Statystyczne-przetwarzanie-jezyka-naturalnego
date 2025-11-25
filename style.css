@@ -1,0 +1,142 @@
+:root {
+    --bg: #3b1a68;
+    --panel: #5f25a5;
+    --ink: #f7f2ff;
+    --muted: #d7c8ee;
+    --accent: #d39bff
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #2d0f52, #4b1e77);
+    color: var(--ink);
+    font-family: Inter, system-ui, Segoe UI, Roboto, Arial
+}
+
+header {
+    padding: 22px 16px;
+    text-align: center
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(18px, 3vw, 28px)
+}
+
+header p {
+    margin: 6px 0 0;
+    color: var(--muted)
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    padding: 0 16px
+}
+
+.panel {
+    background: var(--panel);
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25)
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px
+}
+
+.col-3 {
+    grid-column: span 12
+}
+
+.col-4 {
+    grid-column: span 12
+}
+
+.col-6 {
+    grid-column: span 12
+}
+
+.col-12 {
+    grid-column: span 12
+}
+
+label {
+    font-size: 12px;
+    color: var(--muted);
+    display: block;
+    margin: 0 0 6px
+}
+
+select,
+button {
+    font: inherit
+}
+
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, .15);
+    background: #4a1c86;
+    color: var(--ink);
+    outline: none
+}
+
+.controls {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap
+}
+
+button {
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: #3e156f;
+    color: var(--ink);
+    cursor: pointer
+}
+
+button.primary {
+    background: var(--accent);
+    color: #2e004f;
+    border-color: transparent;
+    font-weight: 700
+}
+
+.result {
+    margin-top: 16px;
+    padding: 14px;
+    border-radius: 12px;
+    background: #2c0f53;
+    border: 1px dashed rgba(255, 255, 255, .25);
+    font-size: 18px
+}
+
+.muted {
+    color: var(--muted);
+    font-size: 12px
+}
+
+@media(min-width:760px) {
+    .col-3 {
+        grid-column: span 3
+    }
+
+    .col-4 {
+        grid-column: span 4
+    }
+
+    .col-6 {
+        grid-column: span 6
+    }
+}
