@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentence Builder – Present/Past/Future Simple</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Sentence Builder (Simple Tenses)</h1>
+        <p>• Present / Past / Future Simple • typ: Affirmative / Negative / Question</p>
+    </header>
+
+    <div class="wrap">
+        <div class="panel">
+            <div class="grid">
+                <div class="col-3">
+                    <label for="subject">Subject (podmiot)</label>
+                    <select id="subject">
+                        <option>I</option>
+                        <option>you</option>
+                        <option>he</option>
+                        <option>she</option>
+                        <option>it</option>
+                        <option>we</option>
+                        <option>they</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label for="tense">Tense (czas)</label>
+                    <select id="tense">
+                        <option>Present Simple</option>
+                        <option>Past Simple</option>
+                        <option>Future Simple</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label for="stype">Sentence type</label>
+                    <select id="stype">
+                        <option>Affirmative</option>
+                        <option>Negative</option>
+                        <option>Question</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label for="adj">Adjective (opcjonalnie)</label>
+                    <select id="adj">
+                        <option value=""></option>
+                        <option value="big">big</option>
+                        <option value="small">small</option>
+                        <option value="good">good</option>
+                        <option value="bad">bad</option>
+                        <option value="new">new</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <label for="noun">Noun (rzeczownik)</label>
+                    <select id="noun"></select>
+                </div>
+                <div class="col-3">
+                    <label for="num">Number</label>
+                    <select id="num">
+                        <option value="sg">singular</option>
+                        <option value="pl">plural</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label for="verb">Verb (czasownik)</label>
+                    <select id="verb"></select>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="primary" id="genBtn">GENERUJ ZDANIE</button>
+                <button id="rndBtn">Losuj</button>
+            </div>
+
+            <div class="result" id="outEn">Zdanie po angielsku pojawi się tutaj.</div>
+            <div class="result" id="outPl">Tłumaczenie po polsku pojawi się tutaj.</div>
+        </div>
+    </div>
+
+    <script>
+        const nouns = [
+            { en: { sg: 'apple', pl: 'apples' }, pl: { sg: 'jabłko', pl: 'jabłka' } },
+            { en: { sg: 'book', pl: 'books' }, pl: { sg: 'książka', pl: 'książki' } },
+            { en: { sg: 'car', pl: 'cars' }, pl: { sg: 'samochód', pl: 'samochody' } },
+            { en: { sg: 'dog', pl: 'dogs' }, pl: { sg: 'pies', pl: 'psy' } },
+            { en: { sg: 'water', pl: 'waters' }, pl: { sg: 'woda', pl: 'wody' } },
+            { en: { sg: 'song', pl: 'songs' }, pl: { sg: 'piosenka', pl: 'piosenki' } },
+            { en: { sg: 'house', pl: 'houses' }, pl: { sg: 'dom', pl: 'domy' } },
+            { en: { sg: 'movie', pl: 'movies' }, pl: { sg: 'film', pl: 'filmy' } },
+            { en: { sg: 'teacher', pl: 'teachers' }, pl: { sg: 'nauczyciel', pl: 'nauczyciele' } },
+            { en: { sg: 'cat', pl: 'cats' }, pl: { sg: 'kot', pl: 'koty' } }
+        ];
+
+        const verbs = [
+            {
+                en: { base: 'eat', third: 'eats', past: 'ate' },
+                pl: {
+                    pres: { I: 'jem', you: 'jesz', he: 'je', she: 'je', it: 'je', we: 'jemy', they: 'jedzą' },
+                    past: { I: 'zjadłem/zjadłam', you: 'zjadłeś/zjadłaś', he: 'zjadł', she: 'zjadła', it: 'zjadło', we: 'zjedliśmy/zjadłyśmy', they: 'zjedli' },
+                    fut: { I: 'będę jadł/jadła', you: 'będziesz jadł/jadła', he: 'będzie jadł', she: 'będzie jadła', it: 'będzie jadło', we: 'będziemy jedli/jadły', they: 'będą jedli' }
+                }
+            },
+            {
+                en: { base: 'drink', third: 'drinks', past: 'drank' },
+                pl: {
+                    pres: { I: 'piję', you: 'pijesz', he: 'pije', she: 'pije', it: 'pije', we: 'pijemy', they: 'piją' },
+                    past: { I: 'wypiłem/wypiłam', you: 'wypiłeś/wypiłaś', he: 'wypił', she: 'wypiła', it: 'wypiło', we: 'wypiliśmy/wypiłyśmy', they: 'wypili' },
+                    fut: { I: 'będę pił/piła', you: 'będziesz pił/piła', he: 'będzie pił', she: 'będzie piła', it: 'będzie piło', we: 'będziemy pili/piły', they: 'będą pili' }
+                }
+            },
+            {
+                en: { base: 'read', third: 'reads', past: 'read' },
+                pl: {
+                    pres: { I: 'czytam', you: 'czytasz', he: 'czyta', she: 'czyta', it: 'czyta', we: 'czytamy', they: 'czytają' },
+                    past: { I: 'czytałem/czytałam', you: 'czytałeś/czytałaś', he: 'czytał', she: 'czytała', it: 'czytało', we: 'czytaliśmy/czytałyśmy', they: 'czytali' },
+                    fut: { I: 'będę czytał/czytała', you: 'będziesz czytał/czytała', he: 'będzie czytał', she: 'będzie czytała', it: 'będzie czytało', we: 'będziemy czytali/czytały', they: 'będą czytali' }
+                }
+            },
+            {
+                en: { base: 'go', third: 'goes', past: 'went' },
+                pl: {
+                    pres: { I: 'idę', you: 'idziesz', he: 'idzie', she: 'idzie', it: 'idzie', we: 'idziemy', they: 'idą' },
+                    past: { I: 'poszedłem/poszłam', you: 'poszedłeś/poszłaś', he: 'poszedł', she: 'poszła', it: 'poszło', we: 'poszliśmy/poszłyśmy', they: 'poszli' },
+                    fut: { I: 'pójdę', you: 'pójdziesz', he: 'pójdzie', she: 'pójdzie', it: 'pójdzie', we: 'pójdziemy', they: 'pójdą' }
+                }
+            },
+            {
+                en: { base: 'play', third: 'plays', past: 'played' },
+                pl: {
+                    pres: { I: 'gram', you: 'grasz', he: 'gra', she: 'gra', it: 'gra', we: 'gramy', they: 'grają' },
+                    past: { I: 'grałem/grałam', you: 'grałeś/grałaś', he: 'grał', she: 'grała', it: 'grało', we: 'graliśmy/grałyśmy', they: 'grali' },
+                    fut: { I: 'będę grał/grała', you: 'będziesz grał/grała', he: 'będzie grał', she: 'będzie grała', it: 'będzie grało', we: 'będziemy grali/grały', they: 'będą grali' }
+                }
+            },
+            {
+                en: { base: 'see', third: 'sees', past: 'saw' },
+                pl: {
+                    pres: { I: 'widzę', you: 'widzisz', he: 'widzi', she: 'widzi', it: 'widzi', we: 'widzimy', they: 'widzą' },
+                    past: { I: 'widziałem/widziałam', you: 'widziałeś/widziałaś', he: 'widział', she: 'widziała', it: 'widziało', we: 'widzieliśmy/widziałyśmy', they: 'widzieli' },
+                    fut: { I: 'będę widział/widziała', you: 'będziesz widział/widziała', he: 'będzie widział', she: 'będzie widziała', it: 'będzie widziało', we: 'będziemy widzieli/widziały', they: 'będą widzieli' }
+                }
+            },
+            {
+                en: { base: 'make', third: 'makes', past: 'made' },
+                pl: {
+                    pres: { I: 'robię', you: 'robisz', he: 'robi', she: 'robi', it: 'robi', we: 'robimy', they: 'robią' },
+                    past: { I: 'zrobiłem/zrobiłam', you: 'zrobiłeś/zrobiłaś', he: 'zrobił', she: 'zrobiła', it: 'zrobiło', we: 'zrobiliśmy/zrobiłyśmy', they: 'zrobili' },
+                    fut: { I: 'zrobię', you: 'zrobisz', he: 'zrobi', she: 'zrobi', it: 'zrobi', we: 'zrobimy', they: 'zrobią' }
+                }
+            },
+            {
+                en: { base: 'like', third: 'likes', past: 'liked' },
+                pl: {
+                    pres: { I: 'lubię', you: 'lubisz', he: 'lubi', she: 'lubi', it: 'lubi', we: 'lubimy', they: 'lubią' },
+                    past: { I: 'lubiłem/lubiłam', you: 'lubiłeś/lubiłaś', he: 'lubił', she: 'lubiła', it: 'lubiło', we: 'lubiliśmy/lubiłyśmy', they: 'lubili' },
+                    fut: { I: 'będę lubił/lubiła', you: 'będziesz lubił/lubiła', he: 'będzie lubił', she: 'będzie lubiła', it: 'będzie lubiło', we: 'będziemy lubili/lubiły', they: 'będą lubili' }
+                }
+            }
+        ];
+
+        const adjs = {
+            '': { en: '', pl: '' },
+            big: { en: 'big', pl: 'duży' },
+            small: { en: 'small', pl: 'mały' },
+            good: { en: 'good', pl: 'dobry' },
+            bad: { en: 'bad', pl: 'zły' },
+            new: { en: 'new', pl: 'nowy' }
+        };
+
+        const pronPL = { I: 'Ja', you: 'Ty', he: 'On', she: 'Ona', it: 'To', we: 'My', they: 'Oni' };
+
+        const $ = s => document.querySelector(s);
+        function is3p(subject) { return ['he', 'she', 'it'].includes(subject) }
+        function articleFor(word) { return /^[aeiou]/.test(word) ? 'an' : 'a' }
+
+        (function init() {
+            const nSel = $('#noun');
+            nouns.forEach((n, i) => { const o = document.createElement('option'); o.value = i; o.textContent = `${n.en.sg} / ${n.en.pl}`; nSel.appendChild(o); });
+            const vSel = $('#verb');
+            verbs.forEach((v, i) => { const o = document.createElement('option'); o.value = i; o.textContent = `${v.en.base} / ${v.en.third} / ${v.en.past}`; vSel.appendChild(o); });
+        })();
+
+        function buildEnglish() {
+            const subject = $('#subject').value; const tense = $('#tense').value; const stype = $('#stype').value;
+            const noun = nouns[+$('#noun').value]; const num = $('#num').value;
+            const adjKey = $('#adj').value; const adj = adjs[adjKey];
+            const verb = verbs[+$('#verb').value];
+
+            const nEn = num === 'sg' ? noun.en.sg : noun.en.pl;
+            const nPhrase = (adj.en ? `${adj.en} ${nEn}` : nEn);
+
+            let objPhrase = nPhrase;
+            if (num === 'sg' && stype !== 'Question') { // add article for simple object in statements/negations
+                if (!['water', 'music'].includes(nEn)) objPhrase = `${articleFor(nPhrase)} ${nPhrase}`;
+            }
+
+            let en = '';
+            if (stype === 'Affirmative') {
+                if (tense === 'Present Simple') en = `${subject} ${is3p(subject) ? verb.en.third : verb.en.base} ${objPhrase}.`;
+                if (tense === 'Past Simple') en = `${subject} ${verb.en.past} ${nPhrase}.`;
+                if (tense === 'Future Simple') en = `${subject} will ${verb.en.base} ${nPhrase}.`;
+            } else if (stype === 'Negative') {
+                if (tense === 'Present Simple') en = `${subject} ${is3p(subject) ? 'does' : 'do'} not ${verb.en.base} ${nPhrase}.`;
+                if (tense === 'Past Simple') en = `${subject} did not ${verb.en.base} ${nPhrase}.`;
+                if (tense === 'Future Simple') en = `${subject} will not ${verb.en.base} ${nPhrase}.`;
+            } else if (stype === 'Question') {
+                if (tense === 'Present Simple') en = `${is3p(subject) ? 'Does' : 'Do'} ${subject} ${verb.en.base} ${nPhrase}?`;
+                if (tense === 'Past Simple') en = `Did ${subject} ${verb.en.base} ${nPhrase}?`;
+                if (tense === 'Future Simple') en = `Will ${subject} ${verb.en.base} ${nPhrase}?`;
+            }
+            return en.replace(/^([a-z])/, m => m.toUpperCase());
+        }
+
+        function buildPolish() {
+            const subject = $('#subject').value; const tense = $('#tense').value; const stype = $('#stype').value;
+            const noun = nouns[+$('#noun').value]; const num = $('#num').value;
+            const adjKey = $('#adj').value; const adj = adjs[adjKey];
+            const verb = verbs[+$('#verb').value];
+
+            const sPL = pronPL[subject];
+            const nPL = num === 'sg' ? noun.pl.sg : noun.pl.pl;
+            const nPhrasePL = (adj.pl ? `${adj.pl} ${nPL}` : nPL); // uproszczone – bez odmiany przymiotnika
+
+            let vPL = '';
+            if (tense === 'Present Simple') vPL = verb.pl.pres[subject];
+            if (tense === 'Past Simple') vPL = verb.pl.past[subject];
+            if (tense === 'Future Simple') vPL = verb.pl.fut[subject];
+
+            let pl = '';
+            if (stype === 'Affirmative') {
+                pl = `${sPL} ${vPL} ${nPhrasePL}.`;
+            } else if (stype === 'Negative') {
+                pl = `${sPL} nie ${vPL} ${nPhrasePL}.`;
+            } else if (stype === 'Question') {
+                pl = `Czy ${sPL.toLowerCase()} ${vPL} ${nPhrasePL}?`;
+            }
+            return pl.replace(/^([A-Za-zĄąĆćĘęŁłŃńÓóŚśŹźŻż])/, m => m.toUpperCase());
+        }
+
+        function generate() {
+            $('#outEn').textContent = buildEnglish();
+            $('#outPl').textContent = buildPolish();
+        }
+
+        function randomize() {
+            $('#subject').selectedIndex = Math.floor(Math.random() * 7);
+            $('#tense').selectedIndex = Math.floor(Math.random() * 3);
+            $('#stype').selectedIndex = Math.floor(Math.random() * 3);
+            $('#adj').selectedIndex = Math.floor(Math.random() * 6);
+            $('#noun').selectedIndex = Math.floor(Math.random() * nouns.length);
+            $('#num').selectedIndex = Math.floor(Math.random() * 2);
+            $('#verb').selectedIndex = Math.floor(Math.random() * verbs.length);
+            generate();
+        }
+
+        $('#genBtn').addEventListener('click', generate);
+        $('#rndBtn').addEventListener('click', randomize);
+        generate();
+    </script>
+</body>
+
+</html>
