@@ -1,0 +1,82 @@
+[
+  {
+    "en": {"base":"be","third":"is","past":"was"},
+    "pl": {
+      "pres":{"I":"jestem","you":"jesteś","he":"jest","she":"jest","it":"jest","we":"jesteśmy","they":"są"},
+      "past":{"I":"byłem","you":"byłeś","he":"był","she":"była","it":"było","we":"byliśmy","they":"byli"},
+      "fut":{"I":"będę","you":"będziesz","he":"będzie","she":"będzie","it":"będzie","we":"będziemy","they":"będą"}
+    }
+  },
+  {
+    "en": {"base":"have","third":"has","past":"had"},
+    "pl": {
+      "pres":{"I":"mam","you":"masz","he":"ma","she":"ma","it":"ma","we":"mamy","they":"mają"},
+      "past":{"I":"miałem","you":"miałeś","he":"miał","she":"miała","it":"miało","we":"mieliśmy","they":"mieli"},
+      "fut":{"I":"będę miał","you":"będziesz miał","he":"będzie miał","she":"będzie miała","it":"będzie miało","we":"będziemy mieli","they":"będą mieli"}
+    }
+  },
+  {
+    "en": {"base":"do","third":"does","past":"did"},
+    "pl": {
+      "pres":{"I":"robię","you":"robisz","he":"robi","she":"robi","it":"robi","we":"robimy","they":"robią"},
+      "past":{"I":"robiłem","you":"robiłeś","he":"robił","she":"robiła","it":"robiło","we":"robiliśmy","they":"robili"},
+      "fut":{"I":"będę robił","you":"będziesz robił","he":"będzie robił","she":"będzie robiła","it":"będzie robiło","we":"będziemy robili","they":"będą robili"}
+    }
+  },
+  {
+    "en": {"base":"say","third":"says","past":"said"},
+    "pl": {
+      "pres":{"I":"mówię","you":"mówisz","he":"mówi","she":"mówi","it":"mówi","we":"mówimy","they":"mówią"},
+      "past":{"I":"mówiłem","you":"mówiłeś","he":"mówił","she":"mówiła","it":"mówiło","we":"mówiliśmy","they":"mówili"},
+      "fut":{"I":"będę mówił","you":"będziesz mówił","he":"będzie mówił","she":"będzie mówiła","it":"będzie mówiło","we":"będziemy mówili","they":"będą mówili"}
+    }
+  },
+  {
+    "en": {"base":"get","third":"gets","past":"got"},
+    "pl": {
+      "pres":{"I":"dostaję","you":"dostajesz","he":"dostaje","she":"dostaje","it":"dostaje","we":"dostajemy","they":"dostają"},
+      "past":{"I":"dostałem","you":"dostałeś","he":"dostał","she":"dostała","it":"dostało","we":"dostaliśmy","they":"dostali"},
+      "fut":{"I":"będę dostawał","you":"będziesz dostawał","he":"będzie dostawał","she":"będzie dostawała","it":"będzie dostawało","we":"będziemy dostawali","they":"będą dostawali"}
+    }
+  },
+  {
+    "en": {"base":"make","third":"makes","past":"made"},
+    "pl": {
+      "pres":{"I":"robię","you":"robisz","he":"robi","she":"robi","it":"robi","we":"robimy","they":"robią"},
+      "past":{"I":"zrobiłem","you":"zrobiłeś","he":"zrobił","she":"zrobiła","it":"zrobiło","we":"zrobiliśmy","they":"zrobili"},
+      "fut":{"I":"będę robił","you":"będziesz robił","he":"będzie robił","she":"będzie robiła","it":"będzie robiło","we":"będziemy robili","they":"będą robili"}
+    }
+  },
+  {
+    "en": {"base":"go","third":"goes","past":"went"},
+    "pl": {
+      "pres":{"I":"idę","you":"idziesz","he":"idzie","she":"idzie","it":"idzie","we":"idziemy","they":"idą"},
+      "past":{"I":"poszedłem","you":"poszedłeś","he":"poszedł","she":"poszła","it":"poszło","we":"poszliśmy","they":"poszli"},
+      "fut":{"I":"pójdę","you":"pójdziesz","he":"pójdzie","she":"pójdzie","it":"pójdzie","we":"pójdziemy","they":"pójdą"}
+    }
+  },
+  {
+    "en": {"base":"know","third":"knows","past":"knew"},
+    "pl": {
+      "pres":{"I":"znam","you":"znasz","he":"zna","she":"zna","it":"zna","we":"znamy","they":"znają"},
+      "past":{"I":"znałem","you":"znałeś","he":"znał","she":"znała","it":"znało","we":"znaliśmy","they":"znali"},
+      "fut":{"I":"będę znał","you":"będziesz znał","he":"będzie znał","she":"będzie znała","it":"będzie znało","we":"będziemy znali","they":"będą znali"}
+    }
+  },
+  {
+    "en": {"base":"think","third":"thinks","past":"thought"},
+    "pl": {
+      "pres":{"I":"myślę","you":"myślisz","he":"myśli","she":"myśli","it":"myśli","we":"myślimy","they":"myślą"},
+      "past":{"I":"myślałem","you":"myślałeś","he":"myślał","she":"myślała","it":"myślało","we":"myśleliśmy","they":"myśleli"},
+      "fut":{"I":"będę myślał","you":"będziesz myślał","he":"będzie myślał","she":"będzie myślała","it":"będzie myślało","we":"będziemy myśleli","they":"będą myśleli"}
+    }
+  },
+  {
+    "en": {"base":"take","third":"takes","past":"took"},
+    "pl": {
+      "pres":{"I":"biorę","you":"bierzesz","he":"bierze","she":"bierze","it":"bierze","we":"bierzemy","they":"bierzą"},
+      "past":{"I":"wziąłem","you":"wziąłeś","he":"wziął","she":"wzięła","it":"wzięło","we":"wzięliśmy","they":"wzięli"},
+      "fut":{"I":"będę brał","you":"będziesz brał","he":"będzie brał","she":"będzie brała","it":"będzie brało","we":"będziemy brali","they":"będą brali"}
+    }
+  }
+]

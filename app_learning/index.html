@@ -84,85 +84,47 @@
     </div>
 
     <script>
-        const nouns = [
-            { en: { sg: 'apple', pl: 'apples' }, pl: { sg: 'jabłko', pl: 'jabłka' } },
-            { en: { sg: 'book', pl: 'books' }, pl: { sg: 'książka', pl: 'książki' } },
-            { en: { sg: 'car', pl: 'cars' }, pl: { sg: 'samochód', pl: 'samochody' } },
-            { en: { sg: 'dog', pl: 'dogs' }, pl: { sg: 'pies', pl: 'psy' } },
-            { en: { sg: 'water', pl: 'waters' }, pl: { sg: 'woda', pl: 'wody' } },
-            { en: { sg: 'song', pl: 'songs' }, pl: { sg: 'piosenka', pl: 'piosenki' } },
-            { en: { sg: 'house', pl: 'houses' }, pl: { sg: 'dom', pl: 'domy' } },
-            { en: { sg: 'movie', pl: 'movies' }, pl: { sg: 'film', pl: 'filmy' } },
-            { en: { sg: 'teacher', pl: 'teachers' }, pl: { sg: 'nauczyciel', pl: 'nauczyciele' } },
-            { en: { sg: 'cat', pl: 'cats' }, pl: { sg: 'kot', pl: 'koty' } }
-        ];
+        let nouns = [], verbs = [];
 
-        const verbs = [
-            {
-                en: { base: 'eat', third: 'eats', past: 'ate' },
-                pl: {
-                    pres: { I: 'jem', you: 'jesz', he: 'je', she: 'je', it: 'je', we: 'jemy', they: 'jedzą' },
-                    past: { I: 'zjadłem/zjadłam', you: 'zjadłeś/zjadłaś', he: 'zjadł', she: 'zjadła', it: 'zjadło', we: 'zjedliśmy/zjadłyśmy', they: 'zjedli' },
-                    fut: { I: 'będę jadł/jadła', you: 'będziesz jadł/jadła', he: 'będzie jadł', she: 'będzie jadła', it: 'będzie jadło', we: 'będziemy jedli/jadły', they: 'będą jedli' }
-                }
-            },
-            {
-                en: { base: 'drink', third: 'drinks', past: 'drank' },
-                pl: {
-                    pres: { I: 'piję', you: 'pijesz', he: 'pije', she: 'pije', it: 'pije', we: 'pijemy', they: 'piją' },
-                    past: { I: 'wypiłem/wypiłam', you: 'wypiłeś/wypiłaś', he: 'wypił', she: 'wypiła', it: 'wypiło', we: 'wypiliśmy/wypiłyśmy', they: 'wypili' },
-                    fut: { I: 'będę pił/piła', you: 'będziesz pił/piła', he: 'będzie pił', she: 'będzie piła', it: 'będzie piło', we: 'będziemy pili/piły', they: 'będą pili' }
-                }
-            },
-            {
-                en: { base: 'read', third: 'reads', past: 'read' },
-                pl: {
-                    pres: { I: 'czytam', you: 'czytasz', he: 'czyta', she: 'czyta', it: 'czyta', we: 'czytamy', they: 'czytają' },
-                    past: { I: 'czytałem/czytałam', you: 'czytałeś/czytałaś', he: 'czytał', she: 'czytała', it: 'czytało', we: 'czytaliśmy/czytałyśmy', they: 'czytali' },
-                    fut: { I: 'będę czytał/czytała', you: 'będziesz czytał/czytała', he: 'będzie czytał', she: 'będzie czytała', it: 'będzie czytało', we: 'będziemy czytali/czytały', they: 'będą czytali' }
-                }
-            },
-            {
-                en: { base: 'go', third: 'goes', past: 'went' },
-                pl: {
-                    pres: { I: 'idę', you: 'idziesz', he: 'idzie', she: 'idzie', it: 'idzie', we: 'idziemy', they: 'idą' },
-                    past: { I: 'poszedłem/poszłam', you: 'poszedłeś/poszłaś', he: 'poszedł', she: 'poszła', it: 'poszło', we: 'poszliśmy/poszłyśmy', they: 'poszli' },
-                    fut: { I: 'pójdę', you: 'pójdziesz', he: 'pójdzie', she: 'pójdzie', it: 'pójdzie', we: 'pójdziemy', they: 'pójdą' }
-                }
-            },
-            {
-                en: { base: 'play', third: 'plays', past: 'played' },
-                pl: {
-                    pres: { I: 'gram', you: 'grasz', he: 'gra', she: 'gra', it: 'gra', we: 'gramy', they: 'grają' },
-                    past: { I: 'grałem/grałam', you: 'grałeś/grałaś', he: 'grał', she: 'grała', it: 'grało', we: 'graliśmy/grałyśmy', they: 'grali' },
-                    fut: { I: 'będę grał/grała', you: 'będziesz grał/grała', he: 'będzie grał', she: 'będzie grała', it: 'będzie grało', we: 'będziemy grali/grały', they: 'będą grali' }
-                }
-            },
-            {
-                en: { base: 'see', third: 'sees', past: 'saw' },
-                pl: {
-                    pres: { I: 'widzę', you: 'widzisz', he: 'widzi', she: 'widzi', it: 'widzi', we: 'widzimy', they: 'widzą' },
-                    past: { I: 'widziałem/widziałam', you: 'widziałeś/widziałaś', he: 'widział', she: 'widziała', it: 'widziało', we: 'widzieliśmy/widziałyśmy', they: 'widzieli' },
-                    fut: { I: 'będę widział/widziała', you: 'będziesz widział/widziała', he: 'będzie widział', she: 'będzie widziała', it: 'będzie widziało', we: 'będziemy widzieli/widziały', they: 'będą widzieli' }
-                }
-            },
-            {
-                en: { base: 'make', third: 'makes', past: 'made' },
-                pl: {
-                    pres: { I: 'robię', you: 'robisz', he: 'robi', she: 'robi', it: 'robi', we: 'robimy', they: 'robią' },
-                    past: { I: 'zrobiłem/zrobiłam', you: 'zrobiłeś/zrobiłaś', he: 'zrobił', she: 'zrobiła', it: 'zrobiło', we: 'zrobiliśmy/zrobiłyśmy', they: 'zrobili' },
-                    fut: { I: 'zrobię', you: 'zrobisz', he: 'zrobi', she: 'zrobi', it: 'zrobi', we: 'zrobimy', they: 'zrobią' }
-                }
-            },
-            {
-                en: { base: 'like', third: 'likes', past: 'liked' },
-                pl: {
-                    pres: { I: 'lubię', you: 'lubisz', he: 'lubi', she: 'lubi', it: 'lubi', we: 'lubimy', they: 'lubią' },
-                    past: { I: 'lubiłem/lubiłam', you: 'lubiłeś/lubiłaś', he: 'lubił', she: 'lubiła', it: 'lubiło', we: 'lubiliśmy/lubiłyśmy', they: 'lubili' },
-                    fut: { I: 'będę lubił/lubiła', you: 'będziesz lubił/lubiła', he: 'będzie lubił', she: 'będzie lubiła', it: 'będzie lubiło', we: 'będziemy lubili/lubiły', they: 'będą lubili' }
-                }
-            }
-        ];
+        async function loadData() {
+            nouns = await fetch('nouns.json').then(res => res.json());
+            verbs = await fetch('verbs.json').then(res => res.json());
+            // Sortowanie rzeczowników po angielskiej formie liczby pojedynczej
+            nouns.sort((a, b) => {
+                if (a.en.sg.toLowerCase() < b.en.sg.toLowerCase()) return -1;
+                if (a.en.sg.toLowerCase() > b.en.sg.toLowerCase()) return 1;
+                return 0;
+            });
+
+            // Sortowanie czasowników po angielskiej formie podstawowej
+            verbs.sort((a, b) => {
+                if (a.en.base.toLowerCase() < b.en.base.toLowerCase()) return -1;
+                if (a.en.base.toLowerCase() > b.en.base.toLowerCase()) return 1;
+                return 0;
+            });
+            populateSelects();
+            generate();
+        }
+
+        function populateSelects() {
+            const nSel = $('#noun');
+            nouns.forEach((n, i) => {
+                const o = document.createElement('option');
+                o.value = i;
+                o.textContent = `${n.en.sg} / ${n.en.pl}`;
+                nSel.appendChild(o);
+            });
+
+            const vSel = $('#verb');
+            verbs.forEach((v, i) => {
+                const o = document.createElement('option');
+                o.value = i;
+                o.textContent = `${v.en.base} / ${v.en.third} / ${v.en.past}`;
+                vSel.appendChild(o);
+            });
+        }
+
+        loadData();
 
         const adjs = {
             '': { en: '', pl: '' },
