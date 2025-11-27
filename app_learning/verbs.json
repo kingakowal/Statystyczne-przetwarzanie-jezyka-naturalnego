@@ -3,7 +3,7 @@
     "en": {"base":"be","third":"is","past":"was"},
     "pl": {
       "pres":{"I":"jestem","you":"jesteś","he":"jest","she":"jest","it":"jest","we":"jesteśmy","they":"są"},
-      "past":{"I":"byłem/byłam","you":"byłeś/byłaś","he":"był","she":"była","it":"było","we":"byliśmy/byłyśmy","they":"byli"},
+      "past":{"I":"byłem","you":"byłeś","he":"był","she":"była","it":"było","we":"byliśmy","they":"byli"},
       "fut":{"I":"będę","you":"będziesz","he":"będzie","she":"będzie","it":"będzie","we":"będziemy","they":"będą"}
     }
   },
@@ -11,160 +11,792 @@
     "en": {"base":"have","third":"has","past":"had"},
     "pl": {
       "pres":{"I":"mam","you":"masz","he":"ma","she":"ma","it":"ma","we":"mamy","they":"mają"},
-      "past":{"I":"miałem/miałam","you":"miałeś/miałaś","he":"miał","she":"miało","it":"miał","we":"mieliśmy/miałyśmy","they":"mieli"},
-      "fut":{"I":"będę mieć","you":"będziesz mieć","he":"będzie mieć","she":"będzie mieć","it":"będzie mieć","we":"będziemy mieć","they":"będą mieć"}
+      "past":{"I":"miałem","you":"miałeś","he":"miał","she":"miała","it":"miało","we":"mieliśmy","they":"mieli"},
+      "fut":{"I":"będę miał","you":"będziesz miał","he":"będzie miał","she":"będzie miała","it":"będzie miało","we":"będziemy mieli","they":"będą mieli"}
     }
   },
   {
     "en": {"base":"do","third":"does","past":"did"},
     "pl": {
       "pres":{"I":"robię","you":"robisz","he":"robi","she":"robi","it":"robi","we":"robimy","they":"robią"},
-      "past":{"I":"robiłem/robiłam","you":"robiłeś/robiłaś","he":"robił","she":"robiła","it":"robiło","we":"robiliśmy/robiłyśmy","they":"robili"},
-      "fut":{"I":"będę robić","you":"będziesz robić","he":"będzie robić","she":"będzie robić","it":"będzie robić","we":"będziemy robić","they":"będą robić"}
+      "past":{"I":"robiłem","you":"robiłeś","he":"robił","she":"robiła","it":"robiło","we":"robiliśmy","they":"robili"},
+      "fut":{"I":"będę robił","you":"będziesz robił","he":"będzie robił","she":"będzie robiła","it":"będzie robiło","we":"będziemy robili","they":"będą robili"}
     }
   },
   {
     "en": {"base":"say","third":"says","past":"said"},
     "pl": {
       "pres":{"I":"mówię","you":"mówisz","he":"mówi","she":"mówi","it":"mówi","we":"mówimy","they":"mówią"},
-      "past":{"I":"mówiłem/mówiłam","you":"mówiłeś/mówiłaś","he":"mówił","she":"mówiła","it":"mówiło","we":"mówiliśmy/mówiłyśmy","they":"mówili"},
-      "fut":{"I":"będę mówić","you":"będziesz mówić","he":"będzie mówić","she":"będzie mówić","it":"będzie mówić","we":"będziemy mówić","they":"będą mówić"}
-    }
-  },
-  {
-    "en": {"base":"get","third":"gets","past":"got"},
-    "pl": {
-      "pres":{"I":"dostaję","you":"dostajesz","he":"dostaje","she":"dostaje","it":"dostaje","we":"dostajemy","they":"dostają"},
-      "past":{"I":"dostałem/dostałam","you":"dostałeś/dostałaś","he":"dostał","she":"dostała","it":"dostało","we":"dostaliśmy/dostałyśmy","they":"dostali"},
-      "fut":{"I":"będę dostawać","you":"będziesz dostawać","he":"będzie dostawać","she":"będzie dostawać","it":"będzie dostawać","we":"będziemy dostawać","they":"będą dostawać"}
-    }
-  },
-  {
-    "en": {"base":"make","third":"makes","past":"made"},
-    "pl": {
-      "pres":{"I":"robię","you":"robisz","he":"robi","she":"robi","it":"robi","we":"robimy","they":"robią"},
-      "past":{"I":"zrobiłem/zrobiłam","you":"zrobiłeś/zrobiłaś","he":"zrobił","she":"zrobiła","it":"zrobiło","we":"zrobiliśmy/zrobiłyśmy","they":"zrobili"},
-      "fut":{"I":"będę robić","you":"będziesz robić","he":"będzie robić","she":"będzie robić","it":"będzie robić","we":"będziemy robić","they":"będą robić"}
+      "past":{"I":"mówiłem","you":"mówiłeś","he":"mówił","she":"mówiła","it":"mówiło","we":"mówiliśmy","they":"mówili"},
+      "fut":{"I":"będę mówił","you":"będziesz mówił","he":"będzie mówił","she":"będzie mówiła","it":"będzie mówiło","we":"będziemy mówili","they":"będą mówili"}
     }
   },
   {
     "en": {"base":"go","third":"goes","past":"went"},
     "pl": {
       "pres":{"I":"idę","you":"idziesz","he":"idzie","she":"idzie","it":"idzie","we":"idziemy","they":"idą"},
-      "past":{"I":"poszedłem/poszłam","you":"poszedłeś/poszłaś","he":"poszedł","she":"poszła","it":"poszło","we":"poszliśmy/poszłyśmy","they":"poszli"},
+      "past":{"I":"poszedłem","you":"poszedłeś","he":"poszedł","she":"poszła","it":"poszło","we":"poszliśmy","they":"poszli"},
       "fut":{"I":"pójdę","you":"pójdziesz","he":"pójdzie","she":"pójdzie","it":"pójdzie","we":"pójdziemy","they":"pójdą"}
+    }
+  },
+  {
+    "en": {"base":"get","third":"gets","past":"got"},
+    "pl": {
+      "pres":{"I":"dostaję","you":"dostajesz","he":"dostaje","she":"dostaje","it":"dostaje","we":"dostajemy","they":"dostają"},
+      "past":{"I":"dostałem","you":"dostałeś","he":"dostał","she":"dostała","it":"dostało","we":"dostaliśmy","they":"dostali"},
+      "fut":{"I":"będę dostawał","you":"będziesz dostawał","he":"będzie dostawał","she":"będzie dostawała","it":"będzie dostawało","we":"będziemy dostawali","they":"będą dostawali"}
+    }
+  },
+  {
+    "en": {"base":"make","third":"makes","past":"made"},
+    "pl": {
+      "pres":{"I":"robię","you":"robisz","he":"robi","she":"robi","it":"robi","we":"robimy","they":"robią"},
+      "past":{"I":"zrobiłem","you":"zrobiłeś","he":"zrobił","she":"zrobiła","it":"zrobiło","we":"zrobiliśmy","they":"zrobili"},
+      "fut":{"I":"będę robił","you":"będziesz robił","he":"będzie robił","she":"będzie robiła","it":"będzie robiło","we":"będziemy robili","they":"będą robili"}
     }
   },
   {
     "en": {"base":"know","third":"knows","past":"knew"},
     "pl": {
-      "pres":{"I":"znam","you":"znasz","he":"zna","she":"zna","it":"zna","we":"znamy","they":"znają"},
-      "past":{"I":"znałem/znałam","you":"znałeś/znalaś","he":"znał","she":"znała","it":"znało","we":"znaliśmy/znałyśmy","they":"znali"},
-      "fut":{"I":"będę znać","you":"będziesz znać","he":"będzie znać","she":"będzie znać","it":"będzie znać","we":"będziemy znać","they":"będą znać"}
+      "pres":{"I":"wiem","you":"wiesz","he":"wie","she":"wie","it":"wie","we":"wiemy","they":"wiedzą"},
+      "past":{"I":"wiedziałem","you":"wiedziałeś","he":"wiedział","she":"wiedziała","it":"wiedziało","we":"wiedzieliśmy","they":"wiedzieli"},
+      "fut":{"I":"będę wiedział","you":"będziesz wiedział","he":"będzie wiedział","she":"będzie wiedziała","it":"będzie wiedziało","we":"będziemy wiedzieli","they":"będą wiedzieli"}
     }
   },
   {
     "en": {"base":"think","third":"thinks","past":"thought"},
     "pl": {
       "pres":{"I":"myślę","you":"myślisz","he":"myśli","she":"myśli","it":"myśli","we":"myślimy","they":"myślą"},
-      "past":{"I":"myślałem/myślałam","you":"myślałeś/myślałaś","he":"myślał","she":"myślała","it":"myślało","we":"myśleliśmy/myślałyśmy","they":"myśleli"},
-      "fut":{"I":"będę myśleć","you":"będziesz myśleć","he":"będzie myśleć","she":"będzie myśleć","it":"będzie myśleć","we":"będziemy myśleć","they":"będą myśleć"}
+      "past":{"I":"myślałem","you":"myślałeś","he":"myślał","she":"myślała","it":"myślało","we":"myśleliśmy","they":"myśleli"},
+      "fut":{"I":"będę myślał","you":"będziesz myślał","he":"będzie myślał","she":"będzie myślała","it":"będzie myślało","we":"będziemy myśleli","they":"będą myśleli"}
     }
   },
   {
     "en": {"base":"take","third":"takes","past":"took"},
     "pl": {
       "pres":{"I":"biorę","you":"bierzesz","he":"bierze","she":"bierze","it":"bierze","we":"bierzemy","they":"biorą"},
-      "past":{"I":"wziąłem/wzięłam","you":"wziąłeś/wzięłaś","he":"wziął","she":"wzięła","it":"wzięło","we":"wzięliśmy/wzięłyśmy","they":"wzięli"},
-      "fut":{"I":"będę brać","you":"będziesz brać","he":"będzie brać","she":"będzie brać","it":"będzie brać","we":"będziemy brać","they":"będą brać"}
+      "past":{"I":"wziąłem","you":"wziąłeś","he":"wziął","she":"wzięła","it":"wzięło","we":"wzięliśmy","they":"wzięli"},
+      "fut":{"I":"będę brał","you":"będziesz brał","he":"będzie brał","she":"będzie brała","it":"będzie brało","we":"będziemy brali","they":"będą brali"}
     }
   },
   {
     "en": {"base":"see","third":"sees","past":"saw"},
     "pl": {
       "pres":{"I":"widzę","you":"widzisz","he":"widzi","she":"widzi","it":"widzi","we":"widzimy","they":"widzą"},
-      "past":{"I":"widziałem/widziałam","you":"widziałeś/widziałaś","he":"widział","she":"widziała","it":"widziało","we":"widzieliśmy/widziałyśmy","they":"widzieli"},
-      "fut":{"I":"będę widzieć","you":"będziesz widzieć","he":"będzie widzieć","she":"będzie widzieć","it":"będzie widzieć","we":"będziemy widzieć","they":"będą widzieć"}
+      "past":{"I":"widziałem","you":"widziałeś","he":"widział","she":"widziała","it":"widziało","we":"widzieliśmy","they":"widzieli"},
+      "fut":{"I":"będę widział","you":"będziesz widział","he":"będzie widział","she":"będzie widziała","it":"będzie widziało","we":"będziemy widzieli","they":"będą widzieli"}
     }
   },
   {
     "en": {"base":"come","third":"comes","past":"came"},
     "pl": {
       "pres":{"I":"przychodzę","you":"przychodzisz","he":"przychodzi","she":"przychodzi","it":"przychodzi","we":"przychodzimy","they":"przychodzą"},
-      "past":{"I":"przyszedłem/przyszłam","you":"przyszedłeś/przyszłaś","he":"przyszedł","she":"przyszła","it":"przyszło","we":"przyszliśmy/przyszłyśmy","they":"przyszli"},
-      "fut":{"I":"będę przychodzić","you":"będziesz przychodzić","he":"będzie przychodzić","she":"będzie przychodzić","it":"będzie przychodzić","we":"będziemy przychodzić","they":"będą przychodzić"}
+      "past":{"I":"przyszedłem","you":"przyszedłeś","he":"przyszedł","she":"przyszła","it":"przyszło","we":"przyszliśmy","they":"przyszli"},
+      "fut":{"I":"będę przychodził","you":"będziesz przychodził","he":"będzie przychodził","she":"będzie przychodziła","it":"będzie przychodziło","we":"będziemy przychodzili","they":"będą przychodzili"}
     }
   },
   {
     "en": {"base":"want","third":"wants","past":"wanted"},
     "pl": {
       "pres":{"I":"chcę","you":"chcesz","he":"chce","she":"chce","it":"chce","we":"chcemy","they":"chcą"},
-      "past":{"I":"chciałem/chciałam","you":"chciałeś/chciałaś","he":"chciał","she":"chciała","it":"chciało","we":"chcieliśmy/chciałyśmy","they":"chcieli"},
-      "fut":{"I":"będę chcieć","you":"będziesz chcieć","he":"będzie chcieć","she":"będzie chcieć","it":"będzie chcieć","we":"będziemy chcieć","they":"będą chcieć"}
-    }
-  },
-  {
-    "en": {"base":"look","third":"looks","past":"looked"},
-    "pl": {
-      "pres":{"I":"patrzę","you":"patrzysz","he":"patrzy","she":"patrzy","it":"patrzy","we":"patrzymy","they":"patrzą"},
-      "past":{"I":"patrzyłem/patrzyłam","you":"patrzyłeś/patrzyłaś","he":"patrzył","she":"patrzyła","it":"patrzyło","we":"patrzyliśmy/patrzyłyśmy","they":"patrzyli"},
-      "fut":{"I":"będę patrzeć","you":"będziesz patrzeć","he":"będzie patrzeć","she":"będzie patrzeć","it":"będzie patrzeć","we":"będziemy patrzeć","they":"będą patrzeć"}
+      "past":{"I":"chciałem","you":"chciałeś","he":"chciał","she":"chciała","it":"chciało","we":"chcieliśmy","they":"chcieli"},
+      "fut":{"I":"będę chciał","you":"będziesz chciał","he":"będzie chciał","she":"będzie chciała","it":"będzie chciało","we":"będziemy chcieli","they":"będą chcieli"}
     }
   },
   {
     "en": {"base":"use","third":"uses","past":"used"},
     "pl": {
       "pres":{"I":"używam","you":"używasz","he":"używa","she":"używa","it":"używa","we":"używamy","they":"używają"},
-      "past":{"I":"używałem/używałam","you":"używałeś/używałaś","he":"używał","she":"używała","it":"używało","we":"używaliśmy/używałyśmy","they":"używali"},
-      "fut":{"I":"będę używać","you":"będziesz używać","he":"będzie używać","she":"będzie używać","it":"będzie używać","we":"będziemy używać","they":"będą używać"}
+      "past":{"I":"używałem","you":"używałeś","he":"używał","she":"używała","it":"używało","we":"używaliśmy","they":"używali"},
+      "fut":{"I":"będę używał","you":"będziesz używał","he":"będzie używał","she":"będzie używała","it":"będzie używało","we":"będziemy używali","they":"będą używali"}
     }
   },
   {
     "en": {"base":"find","third":"finds","past":"found"},
     "pl": {
       "pres":{"I":"znajduję","you":"znajdujesz","he":"znajduje","she":"znajduje","it":"znajduje","we":"znajdujemy","they":"znajdują"},
-      "past":{"I":"znalazłem/znalazłam","you":"znalazłeś/znalazłaś","he":"znalazł","she":"znalazła","it":"znalazło","we":"znaleźliśmy/znalazłyśmy","they":"znaleźli"},
-      "fut":{"I":"będę znajdować","you":"będziesz znajdować","he":"będzie znajdować","she":"będzie znajdować","it":"będzie znajdować","we":"będziemy znajdować","they":"będą znajdować"}
+      "past":{"I":"znalazłem","you":"znalazłeś","he":"znalazł","she":"znalazła","it":"znalazło","we":"znaleźliśmy","they":"znaleźli"},
+      "fut":{"I":"będę znajdował","you":"będziesz znajdował","he":"będzie znajdował","she":"będzie znajdowała","it":"będzie znajdowało","we":"będziemy znajdowali","they":"będą znajdowali"}
     }
   },
   {
     "en": {"base":"give","third":"gives","past":"gave"},
     "pl": {
       "pres":{"I":"daję","you":"dajesz","he":"daje","she":"daje","it":"daje","we":"dajemy","they":"dają"},
-      "past":{"I":"dałem/dałam","you":"dałeś/dałaś","he":"dał","she":"dała","it":"dało","we":"daliśmy/dałyśmy","they":"dali"},
-      "fut":{"I":"będę dawać","you":"będziesz dawać","he":"będzie dawać","she":"będzie dawać","it":"będzie dawać","we":"będziemy dawać","they":"będą dawać"}
+      "past":{"I":"dałem","you":"dałeś","he":"dał","she":"dała","it":"dało","we":"daliśmy","they":"dali"},
+      "fut":{"I":"będę dawał","you":"będziesz dawał","he":"będzie dawał","she":"będzie dawała","it":"będzie dawało","we":"będziemy dawali","they":"będą dawali"}
     }
   },
   {
     "en": {"base":"tell","third":"tells","past":"told"},
     "pl": {
       "pres":{"I":"mówię","you":"mówisz","he":"mówi","she":"mówi","it":"mówi","we":"mówimy","they":"mówią"},
-      "past":{"I":"powiedziałem/powiedziałam","you":"powiedziałeś/powiedziałaś","he":"powiedział","she":"powiedziała","it":"powiedziało","we":"powiedzieliśmy/powiedziałyśmy","they":"powiedzieli"},
-      "fut":{"I":"będę mówić","you":"będziesz mówić","he":"będzie mówić","she":"będzie mówić","it":"będzie mówić","we":"będziemy mówić","they":"będą mówić"}
+      "past":{"I":"mówiłem","you":"mówiłeś","he":"mówił","she":"mówiła","it":"mówiło","we":"mówiliśmy","they":"mówili"},
+      "fut":{"I":"będę mówił","you":"będziesz mówił","he":"będzie mówił","she":"będzie mówiła","it":"będzie mówiło","we":"będziemy mówili","they":"będą mówili"}
     }
   },
   {
     "en": {"base":"work","third":"works","past":"worked"},
     "pl": {
       "pres":{"I":"pracuję","you":"pracujesz","he":"pracuje","she":"pracuje","it":"pracuje","we":"pracujemy","they":"pracują"},
-      "past":{"I":"pracowałem/pracowałam","you":"pracowałeś/pracowałaś","he":"pracował","she":"pracowała","it":"pracowało","we":"pracowaliśmy/pracowałyśmy","they":"pracowali"},
-      "fut":{"I":"będę pracować","you":"będziesz pracować","he":"będzie pracować","she":"będzie pracować","it":"będzie pracować","we":"będziemy pracować","they":"będą pracować"}
+      "past":{"I":"pracowałem","you":"pracowałeś","he":"pracował","she":"pracowała","it":"pracowało","we":"pracowaliśmy","they":"pracowali"},
+      "fut":{"I":"będę pracował","you":"będziesz pracował","he":"będzie pracował","she":"będzie pracowała","it":"będzie pracowało","we":"będziemy pracowali","they":"będą pracowali"}
     }
   },
   {
     "en": {"base":"call","third":"calls","past":"called"},
     "pl": {
       "pres":{"I":"dzwonię","you":"dzwonisz","he":"dzwoni","she":"dzwoni","it":"dzwoni","we":"dzwonimy","they":"dzwonią"},
-      "past":{"I":"zadzwoniłem/zadzwoniłam","you":"zadzwoniłeś/zadzwoniłaś","he":"zadzwonił","she":"zadzwoniła","it":"zadzwoniło","we":"zadzwoniliśmy/zadzwoniłyśmy","they":"zadzwonili"},
-      "fut":{"I":"będę dzwonić","you":"będziesz dzwonić","he":"będzie dzwonić","she":"będzie dzwonić","it":"będzie dzwonić","we":"będziemy dzwonić","they":"będą dzwonić"}
+      "past":{"I":"dzwoniłem","you":"dzwoniłeś","he":"dzwonił","she":"dzwoniła","it":"dzwoniło","we":"dzwoniliśmy","they":"dzwonili"},
+      "fut":{"I":"będę dzwonił","you":"będziesz dzwonił","he":"będzie dzwonił","she":"będzie dzwoniła","it":"będzie dzwoniło","we":"będziemy dzwonili","they":"będą dzwonili"}
     }
   },
   {
     "en": {"base":"try","third":"tries","past":"tried"},
     "pl": {
       "pres":{"I":"próbuję","you":"próbujesz","he":"próbuje","she":"próbuje","it":"próbuje","we":"próbujemy","they":"próbują"},
-      "past":{"I":"próbowałem/próbowałam","you":"próbowałeś/próbowałaś","he":"próbował","she":"próbowała","it":"próbowało","we":"próbowaliśmy/próbowałyśmy","they":"próbowali"},
-      "fut":{"I":"będę próbować","you":"będziesz próbować","he":"będzie próbować","she":"będzie próbować","it":"będzie próbować","we":"będziemy próbować","they":"będą próbować"}
+      "past":{"I":"próbowałem","you":"próbowałeś","he":"próbował","she":"próbowała","it":"próbowało","we":"próbowaliśmy","they":"próbowali"},
+      "fut":{"I":"będę próbował","you":"będziesz próbował","he":"będzie próbował","she":"będzie próbowała","it":"będzie próbowało","we":"będziemy próbowali","they":"będą próbowali"}
+    }
+  },
+  {
+    "en": {"base":"ask","third":"asks","past":"asked"},
+    "pl": {
+      "pres":{"I":"pytam","you":"pytasz","he":"pyta","she":"pyta","it":"pyta","we":"pytamy","they":"pytają"},
+      "past":{"I":"pytałem","you":"pytałeś","he":"pytał","she":"pytała","it":"pytało","we":"pytaliśmy","they":"pytali"},
+      "fut":{"I":"będę pytał","you":"będziesz pytał","he":"będzie pytał","she":"będzie pytała","it":"będzie pytało","we":"będziemy pytali","they":"będą pytali"}
+    }
+  },
+  {
+    "en": {"base":"need","third":"needs","past":"needed"},
+    "pl": {
+      "pres":{"I":"potrzebuję","you":"potrzebujesz","he":"potrzebuje","she":"potrzebuje","it":"potrzebuje","we":"potrzebujemy","they":"potrzebują"},
+      "past":{"I":"potrzebowałem","you":"potrzebowałeś","he":"potrzebował","she":"potrzebowała","it":"potrzebowało","we":"potrzebowaliśmy","they":"potrzebowali"},
+      "fut":{"I":"będę potrzebował","you":"będziesz potrzebował","he":"będzie potrzebował","she":"będzie potrzebowała","it":"będzie potrzebowało","we":"będziemy potrzebowali","they":"będą potrzebowali"}
+    }
+  },
+  {
+    "en": {"base":"feel","third":"feels","past":"felt"},
+    "pl": {
+      "pres":{"I":"czuję","you":"czujesz","he":"czuje","she":"czuje","it":"czuje","we":"czujemy","they":"czują"},
+      "past":{"I":"czułem","you":"czułeś","he":"czuł","she":"czuła","it":"czuło","we":"czuliśmy","they":"czuli"},
+      "fut":{"I":"będę czuł","you":"będziesz czuł","he":"będzie czuł","she":"będzie czuła","it":"będzie czuło","we":"będziemy czuli","they":"będą czuli"}
+    }
+  },
+  {
+    "en": {"base":"become","third":"becomes","past":"became"},
+    "pl": {
+      "pres":{"I":"staję się","you":"stajesz się","he":"staje się","she":"staje się","it":"staje się","we":"stajemy się","they":"stają się"},
+      "past":{"I":"stałem się","you":"stałeś się","he":"stał się","she":"stała się","it":"stało się","we":"staliśmy się","they":"stali się"},
+      "fut":{"I":"stanę się","you":"staniesz się","he":"stanie się","she":"stanie się","it":"stanie się","we":"staniemy się","they":"staną się"}
+    }
+  },
+  {
+    "en": {"base":"leave","third":"leaves","past":"left"},
+    "pl": {
+      "pres":{"I":"opuszczam","you":"opuszczasz","he":"opuszcza","she":"opuszcza","it":"opuszcza","we":"opuszczamy","they":"opuszczają"},
+      "past":{"I":"opuściłem","you":"opuściłeś","he":"opuścił","she":"opuściła","it":"opuściło","we":"opuściliśmy","they":"opuścili"},
+      "fut":{"I":"opuszczę","you":"opuścisz","he":"opuści","she":"opuści","it":"opuści","we":"opuścimy","they":"opuszczą"}
+    }
+  },
+  {
+    "en": {"base":"put","third":"puts","past":"put"},
+    "pl": {
+      "pres":{"I":"kładę","you":"kładziesz","he":"kładzie","she":"kładzie","it":"kładzie","we":"kładziemy","they":"kładą"},
+      "past":{"I":"położyłem","you":"położyłeś","he":"położył","she":"położyła","it":"położyło","we":"położyliśmy","they":"położyli"},
+      "fut":{"I":"położę","you":"położysz","he":"położy","she":"położy","it":"położy","we":"położymy","they":"położą"}
+    }
+  },
+  {
+    "en": {"base":"mean","third":"means","past":"meant"},
+    "pl": {
+      "pres":{"I":"znaczę","you":"znaczysz","he":"znaczy","she":"znaczy","it":"znaczy","we":"znaczymy","they":"znaczą"},
+      "past":{"I":"znaczyłem","you":"znaczyłeś","he":"znaczył","she":"znaczyła","it":"znaczyło","we":"znaczyliśmy","they":"znaczyli"},
+      "fut":{"I":"będę znaczył","you":"będziesz znaczył","he":"będzie znaczył","she":"będzie znaczyła","it":"będzie znaczyło","we":"będziemy znaczyli","they":"będą znaczyli"}
+    }
+  },
+  {
+    "en": {"base":"keep","third":"keeps","past":"kept"},
+    "pl": {
+      "pres":{"I":"trzymam","you":"trzymasz","he":"trzyma","she":"trzyma","it":"trzyma","we":"trzymamy","they":"trzymają"},
+      "past":{"I":"trzymałem","you":"trzymałeś","he":"trzymał","she":"trzymała","it":"trzymało","we":"trzymaliśmy","they":"trzymali"},
+      "fut":{"I":"będę trzymał","you":"będziesz trzymał","he":"będzie trzymał","she":"będzie trzymała","it":"będzie trzymało","we":"będziemy trzymali","they":"będą trzymali"}
+    }
+  },
+  {
+    "en": {"base":"let","third":"lets","past":"let"},
+    "pl": {
+      "pres":{"I":"pozwalam","you":"pozwalasz","he":"pozwala","she":"pozwala","it":"pozwala","we":"pozwalamy","they":"pozwalają"},
+      "past":{"I":"pozwoliłem","you":"pozwoliłeś","he":"pozwolił","she":"pozwoliła","it":"pozwoliło","we":"pozwoliliśmy","they":"pozwolili"},
+      "fut":{"I":"pozwolę","you":"pozwolisz","he":"pozwoli","she":"pozwoli","it":"pozwoli","we":"pozwolimy","they":"pozwolą"}
+    }
+  },
+  {
+    "en": {"base":"begin","third":"begins","past":"began"},
+    "pl": {
+      "pres":{"I":"zaczynam","you":"zaczynasz","he":"zaczyna","she":"zaczyna","it":"zaczyna","we":"zaczynamy","they":"zaczynają"},
+      "past":{"I":"zacząłem","you":"zacząłeś","he":"zaczął","she":"zaczęła","it":"zaczęło","we":"zaczęliśmy","they":"zaczęli"},
+      "fut":{"I":"zacznę","you":"zaczniesz","he":"zacznie","she":"zacznie","it":"zacznie","we":"zaczniemy","they":"zaczną"}
+    }
+  },
+  {
+    "en": {"base":"seem","third":"seems","past":"seemed"},
+    "pl": {
+      "pres":{"I":"wydaję się","you":"wydajesz się","he":"wydaje się","she":"wydaje się","it":"wydaje się","we":"wydajemy się","they":"wydają się"},
+      "past":{"I":"wydawałem się","you":"wydawałeś się","he":"wydawał się","she":"wydawała się","it":"wydawało się","we":"wydawaliśmy się","they":"wydawali się"},
+      "fut":{"I":"będę się wydawał","you":"będziesz się wydawał","he":"będzie się wydawał","she":"będzie się wydawała","it":"będzie się wydawało","we":"będziemy się wydawali","they":"będą się wydawali"}
+    }
+  },
+  {
+    "en": {"base":"help","third":"helps","past":"helped"},
+    "pl": {
+      "pres":{"I":"pomagam","you":"pomagasz","he":"pomaga","she":"pomaga","it":"pomaga","we":"pomagamy","they":"pomagają"},
+      "past":{"I":"pomagałem","you":"pomagałeś","he":"pomagał","she":"pomagała","it":"pomagało","we":"pomagaliśmy","they":"pomagali"},
+      "fut":{"I":"będę pomagał","you":"będziesz pomagał","he":"będzie pomagał","she":"będzie pomagała","it":"będzie pomagało","we":"będziemy pomagali","they":"będą pomagali"}
+    }
+  },
+  {
+    "en": {"base":"talk","third":"talks","past":"talked"},
+    "pl": {
+      "pres":{"I":"rozmawiam","you":"rozmawiasz","he":"rozmawia","she":"rozmawia","it":"rozmawia","we":"rozmawiamy","they":"rozmawiają"},
+      "past":{"I":"rozmawiałem","you":"rozmawiałeś","he":"rozmawiał","she":"rozmawiała","it":"rozmawiało","we":"rozmawialiśmy","they":"rozmawiali"},
+      "fut":{"I":"będę rozmawiał","you":"będziesz rozmawiał","he":"będzie rozmawiał","she":"będzie rozmawiała","it":"będzie rozmawiało","we":"będziemy rozmawiali","they":"będą rozmawiali"}
+    }
+  },
+  {
+    "en": {"base":"turn","third":"turns","past":"turned"},
+    "pl": {
+      "pres":{"I":"skręcam","you":"skręcasz","he":"skręca","she":"skręca","it":"skręca","we":"skręcamy","they":"skręcają"},
+      "past":{"I":"skręcałem","you":"skręcałeś","he":"skręcał","she":"skręcała","it":"skręcało","we":"skręcaliśmy","they":"skręcali"},
+      "fut":{"I":"będę skręcał","you":"będziesz skręcał","he":"będzie skręcał","she":"będzie skręcała","it":"będzie skręcało","we":"będziemy skręcali","they":"będą skręcali"}
+    }
+  },
+  {
+    "en": {"base":"start","third":"starts","past":"started"},
+    "pl": {
+      "pres":{"I":"zaczynam","you":"zaczynasz","he":"zaczyna","she":"zaczyna","it":"zaczyna","we":"zaczynamy","they":"zaczynają"},
+      "past":{"I":"zaczynałem","you":"zaczynałeś","he":"zaczynał","she":"zaczynała","it":"zaczynało","we":"zaczynaliśmy","they":"zaczynali"},
+      "fut":{"I":"będę zaczynał","you":"będziesz zaczynał","he":"będzie zaczynał","she":"będzie zaczynała","it":"będzie zaczynało","we":"będziemy zaczynali","they":"będą zaczynali"}
+    }
+  },
+  {
+    "en": {"base":"show","third":"shows","past":"showed"},
+    "pl": {
+      "pres":{"I":"pokazuję","you":"pokazujesz","he":"pokazuje","she":"pokazuje","it":"pokazuje","we":"pokazujemy","they":"pokazują"},
+      "past":{"I":"pokazywałem","you":"pokazywałeś","he":"pokazywał","she":"pokazywała","it":"pokazywało","we":"pokazywaliśmy","they":"pokazywali"},
+      "fut":{"I":"będę pokazywał","you":"będziesz pokazywał","he":"będzie pokazywał","she":"będzie pokazywała","it":"będzie pokazywało","we":"będziemy pokazywali","they":"będą pokazywali"}
+    }
+  },
+  {
+    "en": {"base":"hear","third":"hears","past":"heard"},
+    "pl": {
+      "pres":{"I":"słyszę","you":"słyszysz","he":"słyszy","she":"słyszy","it":"słyszy","we":"słyszymy","they":"słyszą"},
+      "past":{"I":"słyszałem","you":"słyszałeś","he":"słyszał","she":"słyszała","it":"słyszało","we":"słyszeliśmy","they":"słyszeli"},
+      "fut":{"I":"będę słyszał","you":"będziesz słyszał","he":"będzie słyszał","she":"będzie słyszała","it":"będzie słyszało","we":"będziemy słyszeli","they":"będą słyszeli"}
+    }
+  },
+  {
+    "en": {"base":"play","third":"plays","past":"played"},
+    "pl": {
+      "pres":{"I":"gram","you":"grasz","he":"gra","she":"gra","it":"gra","we":"gramy","they":"grają"},
+      "past":{"I":"grałem","you":"grałeś","he":"grał","she":"grała","it":"grało","we":"graliśmy","they":"grali"},
+      "fut":{"I":"będę grał","you":"będziesz grał","he":"będzie grał","she":"będzie grała","it":"będzie grało","we":"będziemy grali","they":"będą grali"}
+    }
+  },
+  {
+    "en": {"base":"run","third":"runs","past":"ran"},
+    "pl": {
+      "pres":{"I":"biegnę","you":"biegniesz","he":"biegnie","she":"biegnie","it":"biegnie","we":"biegniemy","they":"biegną"},
+      "past":{"I":"biegłem","you":"biegłeś","he":"biegł","she":"biegła","it":"biegło","we":"biegliśmy","they":"biegli"},
+      "fut":{"I":"będę biegł","you":"będziesz biegł","he":"będzie biegł","she":"będzie biegła","it":"będzie biegło","we":"będziemy biegli","they":"będą biegli"}
+    }
+  },
+  {
+    "en": {"base":"move","third":"moves","past":"moved"},
+    "pl": {
+      "pres":{"I":"poruszam","you":"poruszasz","he":"porusza","she":"porusza","it":"porusza","we":"poruszamy","they":"poruszają"},
+      "past":{"I":"poruszałem","you":"poruszałeś","he":"poruszał","she":"poruszała","it":"poruszało","we":"poruszaliśmy","they":"poruszali"},
+      "fut":{"I":"będę poruszał","you":"będziesz poruszał","he":"będzie poruszał","she":"będzie poruszała","it":"będzie poruszało","we":"będziemy poruszali","they":"będą poruszali"}
+    }
+  },
+  {
+    "en": {"base":"like","third":"likes","past":"liked"},
+    "pl": {
+      "pres":{"I":"lubię","you":"lubisz","he":"lubi","she":"lubi","it":"lubi","we":"lubimy","they":"lubią"},
+      "past":{"I":"lubiłem","you":"lubiłeś","he":"lubił","she":"lubiła","it":"lubiło","we":"lubiliśmy","they":"lubili"},
+      "fut":{"I":"będę lubił","you":"będziesz lubił","he":"będzie lubił","she":"będzie lubiła","it":"będzie lubiło","we":"będziemy lubili","they":"będą lubili"}
+    }
+  },
+  {
+    "en": {"base":"live","third":"lives","past":"lived"},
+    "pl": {
+      "pres":{"I":"mieszkam","you":"mieszkasz","he":"mieszka","she":"mieszka","it":"mieszka","we":"mieszkamy","they":"mieszkają"},
+      "past":{"I":"mieszkałem","you":"mieszkałeś","he":"mieszkał","she":"mieszkała","it":"mieszkało","we":"mieszkaliśmy","they":"mieszkali"},
+      "fut":{"I":"będę mieszkał","you":"będziesz mieszkał","he":"będzie mieszkał","she":"będzie mieszkała","it":"będzie mieszkało","we":"będziemy mieszkali","they":"będą mieszkali"}
+    }
+  },
+  {
+    "en": {"base":"believe","third":"believes","past":"believed"},
+    "pl": {
+      "pres":{"I":"wierzę","you":"wierzysz","he":"wierzy","she":"wierzy","it":"wierzy","we":"wierzymy","they":"wierzą"},
+      "past":{"I":"wierzyłem","you":"wierzyłeś","he":"wierzył","she":"wierzyła","it":"wierzyło","we":"wierzyliśmy","they":"wierzyli"},
+      "fut":{"I":"będę wierzył","you":"będziesz wierzył","he":"będzie wierzył","she":"będzie wierzyła","it":"będzie wierzyło","we":"będziemy wierzyli","they":"będą wierzyli"}
+    }
+  },
+  {
+    "en": {"base":"hold","third":"holds","past":"held"},
+    "pl": {
+      "pres":{"I":"trzymam","you":"trzymasz","he":"trzyma","she":"trzyma","it":"trzyma","we":"trzymamy","they":"trzymają"},
+      "past":{"I":"trzymałem","you":"trzymałeś","he":"trzymał","she":"trzymała","it":"trzymało","we":"trzymaliśmy","they":"trzymali"},
+      "fut":{"I":"będę trzymał","you":"będziesz trzymał","he":"będzie trzymał","she":"będzie trzymała","it":"będzie trzymało","we":"będziemy trzymali","they":"będą trzymali"}
+    }
+  },
+  {
+    "en": {"base":"bring","third":"brings","past":"brought"},
+    "pl": {
+      "pres":{"I":"przynoszę","you":"przynosisz","he":"przynosi","she":"przynosi","it":"przynosi","we":"przynosimy","they":"przynoszą"},
+      "past":{"I":"przyniosłem","you":"przyniosłeś","he":"przyniósł","she":"przyniosła","it":"przyniosło","we":"przynieśliśmy","they":"przynieśli"},
+      "fut":{"I":"będę przynosił","you":"będziesz przynosił","he":"będzie przynosił","she":"będzie przynosiła","it":"będzie przynosiło","we":"będziemy przynosili","they":"będą przynosili"}
+    }
+  },
+  {
+    "en": {"base":"happen","third":"happens","past":"happened"},
+    "pl": {
+      "pres":{"I":"dzieję się","you":"dziejesz się","he":"dzieje się","she":"dzieje się","it":"dzieje się","we":"dzieją się","they":"dzieją się"},
+      "past":{"I":"działo się","you":"działo się","he":"działo się","she":"działo się","it":"działo się","we":"działo się","they":"działo się"},
+      "fut":{"I":"będzie się działo","you":"będzie się działo","he":"będzie się działo","she":"będzie się działo","it":"będzie się działo","we":"będzie się działo","they":"będzie się działo"}
+    }
+  },
+  {
+    "en": {"base":"write","third":"writes","past":"wrote"},
+    "pl": {
+      "pres":{"I":"piszę","you":"piszesz","he":"pisze","she":"pisze","it":"pisze","we":"piszemy","they":"piszą"},
+      "past":{"I":"pisałem","you":"pisałeś","he":"pisał","she":"pisała","it":"pisało","we":"pisaliśmy","they":"pisali"},
+      "fut":{"I":"będę pisał","you":"będziesz pisał","he":"będzie pisał","she":"będzie pisała","it":"będzie pisało","we":"będziemy pisali","they":"będą pisali"}
+    }
+  },
+  {
+    "en": {"base":"provide","third":"provides","past":"provided"},
+    "pl": {
+      "pres":{"I":"dostarczam","you":"dostarczasz","he":"dostarcza","she":"dostarcza","it":"dostarcza","we":"dostarczamy","they":"dostarczają"},
+      "past":{"I":"dostarczałem","you":"dostarczałeś","he":"dostarczał","she":"dostarczała","it":"dostarczało","we":"dostarczaliśmy","they":"dostarczali"},
+      "fut":{"I":"będę dostarczał","you":"będziesz dostarczał","he":"będzie dostarczał","she":"będzie dostarczała","it":"będzie dostarczało","we":"będziemy dostarczali","they":"będą dostarczali"}
+    }
+  },
+  {
+    "en": {"base":"sit","third":"sits","past":"sat"},
+    "pl": {
+      "pres":{"I":"siedzę","you":"siedzisz","he":"siedzi","she":"siedzi","it":"siedzi","we":"siedzimy","they":"siedzą"},
+      "past":{"I":"siedziałem","you":"siedziałeś","he":"siedział","she":"siedziała","it":"siedziało","we":"siedzieliśmy","they":"siedzieli"},
+      "fut":{"I":"będę siedział","you":"będziesz siedział","he":"będzie siedział","she":"będzie siedziała","it":"będzie siedziało","we":"będziemy siedzieli","they":"będą siedzieli"}
+    }
+  },
+  {
+    "en": {"base":"stand","third":"stands","past":"stood"},
+    "pl": {
+      "pres":{"I":"stoję","you":"stoisz","he":"stoi","she":"stoi","it":"stoi","we":"stoimy","they":"stoją"},
+      "past":{"I":"stałem","you":"stałeś","he":"stał","she":"stała","it":"stało","we":"staliśmy","they":"stali"},
+      "fut":{"I":"będę stał","you":"będziesz stał","he":"będzie stał","she":"będzie stała","it":"będzie stało","we":"będziemy stali","they":"będą stali"}
+    }
+  },
+  {
+    "en": {"base":"lose","third":"loses","past":"lost"},
+    "pl": {
+      "pres":{"I":"tracę","you":"tracisz","he":"traci","she":"traci","it":"traci","we":"tracimy","they":"tracą"},
+      "past":{"I":"traciłem","you":"traciłeś","he":"tracił","she":"traciła","it":"traciło","we":"traciliśmy","they":"tracili"},
+      "fut":{"I":"będę tracił","you":"będziesz tracił","he":"będzie tracił","she":"będzie traciła","it":"będzie traciło","we":"będziemy tracili","they":"będą tracili"}
+    }
+  },
+  {
+    "en": {"base":"pay","third":"pays","past":"paid"},
+    "pl": {
+      "pres":{"I":"płacę","you":"płacisz","he":"płaci","she":"płaci","it":"płaci","we":"płacimy","they":"płacą"},
+      "past":{"I":"płaciłem","you":"płaciłeś","he":"płacił","she":"płaciła","it":"płaciło","we":"płaciliśmy","they":"płacili"},
+      "fut":{"I":"będę płacił","you":"będziesz płacił","he":"będzie płacił","she":"będzie płaciła","it":"będzie płaciło","we":"będziemy płacili","they":"będą płacili"}
+    }
+  },
+  {
+    "en": {"base":"meet","third":"meets","past":"met"},
+    "pl": {
+      "pres":{"I":"spotykam","you":"spotykasz","he":"spotyka","she":"spotyka","it":"spotyka","we":"spotykamy","they":"spotykają"},
+      "past":{"I":"spotkałem","you":"spotkałeś","he":"spotkał","she":"spotkała","it":"spotkało","we":"spotkaliśmy","they":"spotkali"},
+      "fut":{"I":"będę spotykał","you":"będziesz spotykał","he":"będzie spotykał","she":"będzie spotykała","it":"będzie spotykało","we":"będziemy spotykali","they":"będą spotykali"}
+    }
+  },
+  {
+    "en": {"base":"include","third":"includes","past":"included"},
+    "pl": {
+      "pres":{"I":"zawieram","you":"zawierasz","he":"zawiera","she":"zawiera","it":"zawiera","we":"zawieramy","they":"zawierają"},
+      "past":{"I":"zawierałem","you":"zawierałeś","he":"zawierał","she":"zawierała","it":"zawierało","we":"zawieraliśmy","they":"zawierali"},
+      "fut":{"I":"będę zawierał","you":"będziesz zawierał","he":"będzie zawierał","she":"będzie zawierała","it":"będzie zawierało","we":"będziemy zawierali","they":"będą zawierali"}
+    }
+  },
+  {
+    "en": {"base":"continue","third":"continues","past":"continued"},
+    "pl": {
+      "pres":{"I":"kontynuuję","you":"kontynuujesz","he":"kontynuuje","she":"kontynuuje","it":"kontynuuje","we":"kontynuujemy","they":"kontynuują"},
+      "past":{"I":"kontynuowałem","you":"kontynuowałeś","he":"kontynuował","she":"kontynuowała","it":"kontynuowało","we":"kontynuowaliśmy","they":"kontynuowali"},
+      "fut":{"I":"będę kontynuował","you":"będziesz kontynuował","he":"będzie kontynuował","she":"będzie kontynuowała","it":"będzie kontynuowało","we":"będziemy kontynuowali","they":"będą kontynuowali"}
+    }
+  },
+  {
+    "en": {"base":"set","third":"sets","past":"set"},
+    "pl": {
+      "pres":{"I":"ustawiam","you":"ustawiasz","he":"ustawia","she":"ustawia","it":"ustawia","we":"ustawiamy","they":"ustawiają"},
+      "past":{"I":"ustawiałem","you":"ustawiałeś","he":"ustawiał","she":"ustawiała","it":"ustawiało","we":"ustawialiśmy","they":"ustawiali"},
+      "fut":{"I":"będę ustawiał","you":"będziesz ustawiał","he":"będzie ustawiał","she":"będzie ustawiała","it":"będzie ustawiało","we":"będziemy ustawiali","they":"będą ustawiali"}
+    }
+  },
+  {
+    "en": {"base":"learn","third":"learns","past":"learned"},
+    "pl": {
+      "pres":{"I":"uczę się","you":"uczysz się","he":"uczy się","she":"uczy się","it":"uczy się","we":"uczymy się","they":"uczą się"},
+      "past":{"I":"uczyłem się","you":"uczyłeś się","he":"uczył się","she":"uczyła się","it":"uczyło się","we":"uczyliśmy się","they":"uczyli się"},
+      "fut":{"I":"będę się uczył","you":"będziesz się uczył","he":"będzie się uczył","she":"będzie się uczyła","it":"będzie się uczyło","we":"będziemy się uczyli","they":"będą się uczyli"}
+    }
+  },
+  {
+    "en": {"base":"change","third":"changes","past":"changed"},
+    "pl": {
+      "pres":{"I":"zmieniam","you":"zmieniasz","he":"zmienia","she":"zmienia","it":"zmienia","we":"zmieniamy","they":"zmieniają"},
+      "past":{"I":"zmieniałem","you":"zmieniałeś","he":"zmieniał","she":"zmieniała","it":"zmieniało","we":"zmienialiśmy","they":"zmieniali"},
+      "fut":{"I":"będę zmieniał","you":"będziesz zmieniał","he":"będzie zmieniał","she":"będzie zmieniała","it":"będzie zmieniało","we":"będziemy zmieniali","they":"będą zmieniali"}
+    }
+  },
+  {
+    "en": {"base":"lead","third":"leads","past":"led"},
+    "pl": {
+      "pres":{"I":"prowadzę","you":"prowadzisz","he":"prowadzi","she":"prowadzi","it":"prowadzi","we":"prowadzimy","they":"prowadzą"},
+      "past":{"I":"prowadziłem","you":"prowadziłeś","he":"prowadził","she":"prowadziła","it":"prowadziło","we":"prowadziliśmy","they":"prowadzili"},
+      "fut":{"I":"będę prowadził","you":"będziesz prowadził","he":"będzie prowadził","she":"będzie prowadziła","it":"będzie prowadziło","we":"będziemy prowadzili","they":"będą prowadzili"}
+    }
+  },
+  {
+    "en": {"base":"understand","third":"understands","past":"understood"},
+    "pl": {
+      "pres":{"I":"rozumiem","you":"rozumiesz","he":"rozumie","she":"rozumie","it":"rozumie","we":"rozumiemy","they":"rozumieją"},
+      "past":{"I":"rozumiałem","you":"rozumiałeś","he":"rozumiał","she":"rozumiała","it":"rozumiało","we":"rozumieliśmy","they":"rozumieli"},
+      "fut":{"I":"będę rozumiał","you":"będziesz rozumiał","he":"będzie rozumiał","she":"będzie rozumiała","it":"będzie rozumiało","we":"będziemy rozumieli","they":"będą rozumieli"}
+    }
+  },
+  {
+    "en": {"base":"watch","third":"watches","past":"watched"},
+    "pl": {
+      "pres":{"I":"oglądam","you":"oglądasz","he":"ogląda","she":"ogląda","it":"ogląda","we":"oglądamy","they":"oglądają"},
+      "past":{"I":"oglądałem","you":"oglądałeś","he":"oglądał","she":"oglądała","it":"oglądało","we":"oglądaliśmy","they":"oglądali"},
+      "fut":{"I":"będę oglądał","you":"będziesz oglądał","he":"będzie oglądał","she":"będzie oglądała","it":"będzie oglądało","we":"będziemy oglądali","they":"będą oglądali"}
+    }
+  },
+  {
+    "en": {"base":"follow","third":"follows","past":"followed"},
+    "pl": {
+      "pres":{"I":"podążam","you":"podążasz","he":"podąża","she":"podąża","it":"podąża","we":"podążamy","they":"podążają"},
+      "past":{"I":"podążałem","you":"podążałeś","he":"podążał","she":"podążała","it":"podążało","we":"podążaliśmy","they":"podążali"},
+      "fut":{"I":"będę podążał","you":"będziesz podążał","he":"będzie podążał","she":"będzie podążała","it":"będzie podążało","we":"będziemy podążali","they":"będą podążali"}
+    }
+  },
+  {
+    "en": {"base":"stop","third":"stops","past":"stopped"},
+    "pl": {
+      "pres":{"I":"zatrzymuję","you":"zatrzymujesz","he":"zatrzymuje","she":"zatrzymuje","it":"zatrzymuje","we":"zatrzymujemy","they":"zatrzymują"},
+      "past":{"I":"zatrzymałem","you":"zatrzymałeś","he":"zatrzymał","she":"zatrzymała","it":"zatrzymało","we":"zatrzymaliśmy","they":"zatrzymali"},
+      "fut":{"I":"będę zatrzymywał","you":"będziesz zatrzymywał","he":"będzie zatrzymywał","she":"będzie zatrzymywała","it":"będzie zatrzymywało","we":"będziemy zatrzymywali","they":"będą zatrzymywali"}
+    }
+  },
+  {
+    "en": {"base":"create","third":"creates","past":"created"},
+    "pl": {
+      "pres":{"I":"tworzę","you":"tworzysz","he":"tworzy","she":"tworzy","it":"tworzy","we":"tworzymy","they":"tworzą"},
+      "past":{"I":"tworzyłem","you":"tworzyłeś","he":"tworzył","she":"tworzyła","it":"tworzyło","we":"tworzyliśmy","they":"tworzyli"},
+      "fut":{"I":"będę tworzył","you":"będziesz tworzył","he":"będzie tworzył","she":"będzie tworzyła","it":"będzie tworzyło","we":"będziemy tworzyli","they":"będą tworzyli"}
+    }
+  },
+  {
+    "en": {"base":"speak","third":"speaks","past":"spoke"},
+    "pl": {
+      "pres":{"I":"mówię","you":"mówisz","he":"mówi","she":"mówi","it":"mówi","we":"mówimy","they":"mówią"},
+      "past":{"I":"mówiłem","you":"mówiłeś","he":"mówił","she":"mówiła","it":"mówiło","we":"mówiliśmy","they":"mówili"},
+      "fut":{"I":"będę mówił","you":"będziesz mówił","he":"będzie mówił","she":"będzie mówiła","it":"będzie mówiło","we":"będziemy mówili","they":"będą mówili"}
+    }
+  },
+  {
+    "en": {"base":"read","third":"reads","past":"read"},
+    "pl": {
+      "pres":{"I":"czytam","you":"czytasz","he":"czyta","she":"czyta","it":"czyta","we":"czytamy","they":"czytają"},
+      "past":{"I":"czytałem","you":"czytałeś","he":"czytał","she":"czytała","it":"czytało","we":"czytaliśmy","they":"czytali"},
+      "fut":{"I":"będę czytał","you":"będziesz czytał","he":"będzie czytał","she":"będzie czytała","it":"będzie czytało","we":"będziemy czytali","they":"będą czytali"}
+    }
+  },
+  {
+    "en": {"base":"allow","third":"allows","past":"allowed"},
+    "pl": {
+      "pres":{"I":"pozwalam","you":"pozwalasz","he":"pozwala","she":"pozwala","it":"pozwala","we":"pozwalamy","they":"pozwalają"},
+      "past":{"I":"pozwalałem","you":"pozwalałeś","he":"pozwalał","she":"pozwalała","it":"pozwalało","we":"pozwalaliśmy","they":"pozwalali"},
+      "fut":{"I":"będę pozwalał","you":"będziesz pozwalał","he":"będzie pozwalał","she":"będzie pozwalała","it":"będzie pozwalało","we":"będziemy pozwalali","they":"będą pozwalali"}
+    }
+  },
+  {
+    "en": {"base":"add","third":"adds","past":"added"},
+    "pl": {
+      "pres":{"I":"dodaję","you":"dodajesz","he":"dodaje","she":"dodaje","it":"dodaje","we":"dodajemy","they":"dodają"},
+      "past":{"I":"dodałem","you":"dodałeś","he":"dodał","she":"dodała","it":"dodało","we":"dodaliśmy","they":"dodali"},
+      "fut":{"I":"będę dodawał","you":"będziesz dodawał","he":"będzie dodawał","she":"będzie dodawała","it":"będzie dodawało","we":"będziemy dodawali","they":"będą dodawali"}
+    }
+  },
+  {
+    "en": {"base":"spend","third":"spends","past":"spent"},
+    "pl": {
+      "pres":{"I":"spędzam","you":"spędzasz","he":"spędza","she":"spędza","it":"spędza","we":"spędzamy","they":"spędzają"},
+      "past":{"I":"spędzałem","you":"spędzałeś","he":"spędzał","she":"spędzała","it":"spędzało","we":"spędzaliśmy","they":"spędzali"},
+      "fut":{"I":"będę spędzał","you":"będziesz spędzał","he":"będzie spędzał","she":"będzie spędzała","it":"będzie spędzało","we":"będziemy spędzali","they":"będą spędzali"}
+    }
+  },
+  {
+    "en": {"base":"grow","third":"grows","past":"grew"},
+    "pl": {
+      "pres":{"I":"rosnę","you":"rośniesz","he":"rośnie","she":"rośnie","it":"rośnie","we":"rośniemy","they":"rosną"},
+      "past":{"I":"rosłem","you":"rosłeś","he":"rósł","she":"rosła","it":"rosło","we":"rośliśmy","they":"rośli"},
+      "fut":{"I":"będę rósł","you":"będziesz rósł","he":"będzie rósł","she":"będzie rosła","it":"będzie rosło","we":"będziemy rośli","they":"będą rośli"}
+    }
+  },
+  {
+    "en": {"base":"open","third":"opens","past":"opened"},
+    "pl": {
+      "pres":{"I":"otwieram","you":"otwierasz","he":"otwiera","she":"otwiera","it":"otwiera","we":"otwieramy","they":"otwierają"},
+      "past":{"I":"otwierałem","you":"otwierałeś","he":"otwierał","she":"otwierała","it":"otwierało","we":"otwieraliśmy","they":"otwierali"},
+      "fut":{"I":"będę otwierał","you":"będziesz otwierał","he":"będzie otwierał","she":"będzie otwierała","it":"będzie otwierało","we":"będziemy otwierali","they":"będą otwierali"}
+    }
+  },
+  {
+    "en": {"base":"walk","third":"walks","past":"walked"},
+    "pl": {
+      "pres":{"I":"chodzę","you":"chodzisz","he":"chodzi","she":"chodzi","it":"chodzi","we":"chodzimy","they":"chodzą"},
+      "past":{"I":"chodziłem","you":"chodziłeś","he":"chodził","she":"chodziła","it":"chodziło","we":"chodziliśmy","they":"chodzili"},
+      "fut":{"I":"będę chodził","you":"będziesz chodził","he":"będzie chodził","she":"będzie chodziła","it":"będzie chodziło","we":"będziemy chodzili","they":"będą chodzili"}
+    }
+  },
+  {
+    "en": {"base":"win","third":"wins","past":"won"},
+    "pl": {
+      "pres":{"I":"wygrywam","you":"wygrywasz","he":"wygrywa","she":"wygrywa","it":"wygrywa","we":"wygrywamy","they":"wygrywają"},
+      "past":{"I":"wygrałem","you":"wygrałeś","he":"wygrał","she":"wygrała","it":"wygrało","we":"wygraliśmy","they":"wygrali"},
+      "fut":{"I":"wygram","you":"wygrasz","he":"wygra","she":"wygra","it":"wygra","we":"wygramy","they":"wygrają"}
+    }
+  },
+  {
+    "en": {"base":"offer","third":"offers","past":"offered"},
+    "pl": {
+      "pres":{"I":"oferuję","you":"oferujesz","he":"oferuje","she":"oferuje","it":"oferuje","we":"oferujemy","they":"oferują"},
+      "past":{"I":"oferowałem","you":"oferowałeś","he":"oferował","she":"oferowała","it":"oferowało","we":"oferowaliśmy","they":"oferowali"},
+      "fut":{"I":"będę oferował","you":"będziesz oferował","he":"będzie oferował","she":"będzie oferowała","it":"będzie oferowało","we":"będziemy oferowali","they":"będą oferowali"}
+    }
+  },
+  {
+    "en": {"base":"remember","third":"remembers","past":"remembered"},
+    "pl": {
+      "pres":{"I":"pamiętam","you":"pamiętasz","he":"pamięta","she":"pamięta","it":"pamięta","we":"pamiętamy","they":"pamiętają"},
+      "past":{"I":"pamiętałem","you":"pamiętałeś","he":"pamiętał","she":"pamiętała","it":"pamiętało","we":"pamiętaliśmy","they":"pamiętali"},
+      "fut":{"I":"będę pamiętał","you":"będziesz pamiętał","he":"będzie pamiętał","she":"będzie pamiętała","it":"będzie pamiętało","we":"będziemy pamiętali","they":"będą pamiętali"}
+    }
+  },
+  {
+    "en": {"base":"love","third":"loves","past":"loved"},
+    "pl": {
+      "pres":{"I":"kocham","you":"kochasz","he":"kocha","she":"kocha","it":"kocha","we":"kochamy","they":"kochają"},
+      "past":{"I":"kochałem","you":"kochałeś","he":"kochał","she":"kochała","it":"kochało","we":"kochaliśmy","they":"kochali"},
+      "fut":{"I":"będę kochał","you":"będziesz kochał","he":"będzie kochał","she":"będzie kochała","it":"będzie kochało","we":"będziemy kochali","they":"będą kochali"}
+    }
+  },
+  {
+    "en": {"base":"consider","third":"considers","past":"considered"},
+    "pl": {
+      "pres":{"I":"rozważam","you":"rozważasz","he":"rozważa","she":"rozważa","it":"rozważa","we":"rozważamy","they":"rozważają"},
+      "past":{"I":"rozważałem","you":"rozważałeś","he":"rozważał","she":"rozważała","it":"rozważało","we":"rozważaliśmy","they":"rozważali"},
+      "fut":{"I":"będę rozważał","you":"będziesz rozważał","he":"będzie rozważał","she":"będzie rozważała","it":"będzie rozważało","we":"będziemy rozważali","they":"będą rozważali"}
+    }
+  },
+  {
+    "en": {"base":"appear","third":"appears","past":"appeared"},
+    "pl": {
+      "pres":{"I":"pojawiam się","you":"pojawiasz się","he":"pojawia się","she":"pojawia się","it":"pojawia się","we":"pojawiamy się","they":"pojawiają się"},
+      "past":{"I":"pojawiłem się","you":"pojawiłeś się","he":"pojawił się","she":"pojawiła się","it":"pojawiło się","we":"pojawiliśmy się","they":"pojawili się"},
+      "fut":{"I":"pojawię się","you":"pojawisz się","he":"pojawi się","she":"pojawi się","it":"pojawi się","we":"pojawimy się","they":"pojawią się"}
+    }
+  },
+  {
+    "en": {"base":"buy","third":"buys","past":"bought"},
+    "pl": {
+      "pres":{"I":"kupuję","you":"kupujesz","he":"kupuje","she":"kupuje","it":"kupuje","we":"kupujemy","they":"kupują"},
+      "past":{"I":"kupiłem","you":"kupiłeś","he":"kupił","she":"kupiła","it":"kupiło","we":"kupiliśmy","they":"kupili"},
+      "fut":{"I":"kupię","you":"kupisz","he":"kupi","she":"kupi","it":"kupi","we":"kupimy","they":"kupią"}
+    }
+  },
+  {
+    "en": {"base":"wait","third":"waits","past":"waited"},
+    "pl": {
+      "pres":{"I":"czekam","you":"czekasz","he":"czeka","she":"czeka","it":"czeka","we":"czekamy","they":"czekają"},
+      "past":{"I":"czekałem","you":"czekałeś","he":"czekał","she":"czekała","it":"czekało","we":"czekaliśmy","they":"czekali"},
+      "fut":{"I":"będę czekał","you":"będziesz czekał","he":"będzie czekał","she":"będzie czekała","it":"będzie czekało","we":"będziemy czekali","they":"będą czekali"}
+    }
+  },
+  {
+    "en": {"base":"serve","third":"serves","past":"served"},
+    "pl": {
+      "pres":{"I":"służę","you":"służysz","he":"służy","she":"służy","it":"służy","we":"służymy","they":"służą"},
+      "past":{"I":"służyłem","you":"służyłeś","he":"służył","she":"służyła","it":"służyło","we":"służyliśmy","they":"służyli"},
+      "fut":{"I":"będę służył","you":"będziesz służył","he":"będzie służył","she":"będzie służyła","it":"będzie służyło","we":"będziemy służyli","they":"będą służyli"}
+    }
+  },
+  {
+    "en": {"base":"die","third":"dies","past":"died"},
+    "pl": {
+      "pres":{"I":"umieram","you":"umierasz","he":"umiera","she":"umiera","it":"umiera","we":"umieramy","they":"umierają"},
+      "past":{"I":"umarłem","you":"umarłeś","he":"umarł","she":"umarła","it":"umarło","we":"umarliśmy","they":"umarli"},
+      "fut":{"I":"będę umierał","you":"będziesz umierał","he":"będzie umierał","she":"będzie umierała","it":"będzie umierało","we":"będziemy umierali","they":"będą umierali"}
+    }
+  },
+  {
+    "en": {"base":"send","third":"sends","past":"sent"},
+    "pl": {
+      "pres":{"I":"wysyłam","you":"wysyłasz","he":"wysyła","she":"wysyła","it":"wysyła","we":"wysyłamy","they":"wysyłają"},
+      "past":{"I":"wysłałem","you":"wysłałeś","he":"wysłał","she":"wysłała","it":"wysłało","we":"wysłaliśmy","they":"wysłali"},
+      "fut":{"I":"będę wysyłał","you":"będziesz wysyłał","he":"będzie wysyłał","she":"będzie wysyłała","it":"będzie wysyłało","we":"będziemy wysyłali","they":"będą wysyłali"}
+    }
+  },
+  {
+    "en": {"base":"expect","third":"expects","past":"expected"},
+    "pl": {
+      "pres":{"I":"oczekuję","you":"oczekujesz","he":"oczekuje","she":"oczekuje","it":"oczekuje","we":"oczekujemy","they":"oczekują"},
+      "past":{"I":"oczekiwałem","you":"oczekiwałeś","he":"oczekiwał","she":"oczekiwała","it":"oczekiwało","we":"oczekiwaliśmy","they":"oczekiwali"},
+      "fut":{"I":"będę oczekiwał","you":"będziesz oczekiwał","he":"będzie oczekiwał","she":"będzie oczekiwała","it":"będzie oczekiwało","we":"będziemy oczekiwali","they":"będą oczekiwali"}
+    }
+  },
+  {
+    "en": {"base":"build","third":"builds","past":"built"},
+    "pl": {
+      "pres":{"I":"buduję","you":"budujesz","he":"buduje","she":"buduje","it":"buduje","we":"budujemy","they":"budują"},
+      "past":{"I":"budowałem","you":"budowałeś","he":"budował","she":"budowała","it":"budowało","we":"budowaliśmy","they":"budowali"},
+      "fut":{"I":"będę budował","you":"będziesz budował","he":"będzie budował","she":"będzie budowała","it":"będzie budowało","we":"będziemy budowali","they":"będą budowali"}
+    }
+  },
+  {
+    "en": {"base":"stay","third":"stays","past":"stayed"},
+    "pl": {
+      "pres":{"I":"zostaję","you":"zostajesz","he":"zostaje","she":"zostaje","it":"zostaje","we":"zostajemy","they":"zostają"},
+      "past":{"I":"zostałem","you":"zostałeś","he":"został","she":"została","it":"zostało","we":"zostaliśmy","they":"zostali"},
+      "fut":{"I":"będę zostawał","you":"będziesz zostawał","he":"będzie zostawał","she":"będzie zostawała","it":"będzie zostawało","we":"będziemy zostawali","they":"będą zostawali"}
+    }
+  },
+  {
+    "en": {"base":"fall","third":"falls","past":"fell"},
+    "pl": {
+      "pres":{"I":"upadam","you":"upadasz","he":"upada","she":"upada","it":"upada","we":"upadamy","they":"upadają"},
+      "past":{"I":"upadłem","you":"upadłeś","he":"upadł","she":"upadła","it":"upadło","we":"upadliśmy","they":"upadli"},
+      "fut":{"I":"będę upadał","you":"będziesz upadał","he":"będzie upadał","she":"będzie upadała","it":"będzie upadało","we":"będziemy upadali","they":"będą upadali"}
+    }
+  },
+  {
+    "en": {"base":"cut","third":"cuts","past":"cut"},
+    "pl": {
+      "pres":{"I":"tnę","you":"tniesz","he":"tnie","she":"tnie","it":"tnie","we":"tniemy","they":"tną"},
+      "past":{"I":"ciąłem","you":"ciąłeś","he":"ciął","she":"cięła","it":"cięło","we":"cięliśmy","they":"cięli"},
+      "fut":{"I":"będę ciął","you":"będziesz ciął","he":"będzie ciął","she":"będzie ciąła","it":"będzie ciąło","we":"będziemy cięli","they":"będą cięli"}
+    }
+  },
+  {
+    "en": {"base":"reach","third":"reaches","past":"reached"},
+    "pl": {
+      "pres":{"I":"osiągam","you":"osiągasz","he":"osiąga","she":"osiąga","it":"osiąga","we":"osiągamy","they":"osiągają"},
+      "past":{"I":"osiągnąłem","you":"osiągnąłeś","he":"osiągnął","she":"osiągnęła","it":"osiągnęło","we":"osiągnęliśmy","they":"osiągnęli"},
+      "fut":{"I":"będę osiągał","you":"będziesz osiągał","he":"będzie osiągał","she":"będzie osiągała","it":"będzie osiągało","we":"będziemy osiągali","they":"będą osiągali"}
+    }
+  },
+  {
+    "en": {"base":"kill","third":"kills","past":"killed"},
+    "pl": {
+      "pres":{"I":"zabijam","you":"zabijasz","he":"zabija","she":"zabija","it":"zabija","we":"zabijamy","they":"zabijają"},
+      "past":{"I":"zabiłem","you":"zabiłeś","he":"zabił","she":"zabiła","it":"zabiło","we":"zabiliśmy","they":"zabili"},
+      "fut":{"I":"będę zabijał","you":"będziesz zabijał","he":"będzie zabijał","she":"będzie zabijała","it":"będzie zabijało","we":"będziemy zabijali","they":"będą zabijali"}
+    }
+  },
+  {
+    "en": {"base":"remain","third":"remains","past":"remained"},
+    "pl": {
+      "pres":{"I":"pozostaję","you":"pozostajesz","he":"pozostaje","she":"pozostaje","it":"pozostaje","we":"pozostajemy","they":"pozostają"},
+      "past":{"I":"pozostałem","you":"pozostałeś","he":"pozostał","she":"pozostała","it":"pozostało","we":"pozostaliśmy","they":"pozostali"},
+      "fut":{"I":"będę pozostawał","you":"będziesz pozostawał","he":"będzie pozostawał","she":"będzie pozostawała","it":"będzie pozostawało","we":"będziemy pozostawali","they":"będą pozostawali"}
+    }
+  },
+  {
+    "en": {"base":"suggest","third":"suggests","past":"suggested"},
+    "pl": {
+      "pres":{"I":"sugeruję","you":"sugerujesz","he":"sugeruje","she":"sugeruje","it":"sugeruje","we":"sugerujemy","they":"sugerują"},
+      "past":{"I":"zasugerowałem","you":"zasugerowałeś","he":"zasugerował","she":"zasugerowała","it":"zasugerowało","we":"zasugerowaliśmy","they":"zasugerowali"},
+      "fut":{"I":"będę sugerował","you":"będziesz sugerował","he":"będzie sugerował","she":"będzie sugerowała","it":"będzie sugerowało","we":"będziemy sugerowali","they":"będą sugerowali"}
+    }
+  },
+  {
+    "en": {"base":"raise","third":"raises","past":"raised"},
+    "pl": {
+      "pres":{"I":"podnoszę","you":"podnosisz","he":"podnosi","she":"podnosi","it":"podnosi","we":"podnosimy","they":"podnoszą"},
+      "past":{"I":"podniosłem","you":"podniosłeś","he":"podniósł","she":"podniosła","it":"podniosło","we":"podnieśliśmy","they":"podnieśli"},
+      "fut":{"I":"będę podnosił","you":"będziesz podnosił","he":"będzie podnosił","she":"będzie podnosiła","it":"będzie podnosiło","we":"będziemy podnosili","they":"będą podnosili"}
+    }
+  },
+  {
+    "en": {"base":"pass","third":"passes","past":"passed"},
+    "pl": {
+      "pres":{"I":"przechodzę","you":"przechodzisz","he":"przechodzi","she":"przechodzi","it":"przechodzi","we":"przechodzimy","they":"przechodzą"},
+      "past":{"I":"przeszedłem","you":"przeszedłeś","he":"przeszedł","she":"przeszła","it":"przeszło","we":"przeszliśmy","they":"przeszli"},
+      "fut":{"I":"będę przechodził","you":"będziesz przechodził","he":"będzie przechodził","she":"będzie przechodziła","it":"będzie przechodziło","we":"będziemy przechodzili","they":"będą przechodzili"}
+    }
+  },
+  {
+    "en": {"base":"sell","third":"sells","past":"sold"},
+    "pl": {
+      "pres":{"I":"sprzedaję","you":"sprzedajesz","he":"sprzedaje","she":"sprzedaje","it":"sprzedaje","we":"sprzedajemy","they":"sprzedają"},
+      "past":{"I":"sprzedałem","you":"sprzedałeś","he":"sprzedał","she":"sprzedała","it":"sprzedało","we":"sprzedaliśmy","they":"sprzedali"},
+      "fut":{"I":"będę sprzedawał","you":"będziesz sprzedawał","he":"będzie sprzedawał","she":"będzie sprzedawała","it":"będzie sprzedawało","we":"będziemy sprzedawali","they":"będą sprzedawali"}
+    }
+  },
+  {
+    "en": {"base":"require","third":"requires","past":"required"},
+    "pl": {
+      "pres":{"I":"wymagam","you":"wymagasz","he":"wymaga","she":"wymaga","it":"wymaga","we":"wymagamy","they":"wymagają"},
+      "past":{"I":"wymagałem","you":"wymagałeś","he":"wymagał","she":"wymagała","it":"wymagało","we":"wymagaliśmy","they":"wymagali"},
+      "fut":{"I":"będę wymagał","you":"będziesz wymagał","he":"będzie wymagał","she":"będzie wymagała","it":"będzie wymagało","we":"będziemy wymagali","they":"będą wymagali"}
+    }
+  },
+  {
+    "en": {"base":"report","third":"reports","past":"reported"},
+    "pl": {
+      "pres":{"I":"raportuję","you":"raportujesz","he":"raportuje","she":"raportuje","it":"raportuje","we":"raportujemy","they":"raportują"},
+      "past":{"I":"raportowałem","you":"raportowałeś","he":"raportował","she":"raportowała","it":"raportowało","we":"raportowaliśmy","they":"raportowali"},
+      "fut":{"I":"będę raportował","you":"będziesz raportował","he":"będzie raportował","she":"będzie raportowała","it":"będzie raportowało","we":"będziemy raportowali","they":"będą raportowali"}
+    }
+  },
+  {
+    "en": {"base":"decide","third":"decides","past":"decided"},
+    "pl": {
+      "pres":{"I":"decyduję","you":"decydujesz","he":"decyduje","she":"decyduje","it":"decyduje","we":"decydujemy","they":"decydują"},
+      "past":{"I":"zdecydowałem","you":"zdecydowałeś","he":"zdecydował","she":"zdecydowała","it":"zdecydowało","we":"zdecydowaliśmy","they":"zdecydowali"},
+      "fut":{"I":"będę decydował","you":"będziesz decydował","he":"będzie decydował","she":"będzie decydowała","it":"będzie decydowało","we":"będziemy decydowali","they":"będą decydowali"}
+    }
+  },
+  {
+    "en": {"base":"pull","third":"pulls","past":"pulled"},
+    "pl": {
+      "pres":{"I":"ciągnę","you":"ciągniesz","he":"ciągnie","she":"ciągnie","it":"ciągnie","we":"ciągniemy","they":"ciągną"},
+      "past":{"I":"ciągnąłem","you":"ciągnąłeś","he":"ciągnął","she":"ciągnęła","it":"ciągnęło","we":"ciągnęliśmy","they":"ciągnęli"},
+      "fut":{"I":"będę ciągnął","you":"będziesz ciągnął","he":"będzie ciągnął","she":"będzie ciągnęła","it":"będzie ciągnęło","we":"będziemy ciągnęli","they":"będą ciągnęli"}
+    }
+  },
+  {
+    "en": {"base":"return","third":"returns","past":"returned"},
+    "pl": {
+      "pres":{"I":"wracam","you":"wracasz","he":"wraca","she":"wraca","it":"wraca","we":"wracamy","they":"wracają"},
+      "past":{"I":"wróciłem","you":"wróciłeś","he":"wrócił","she":"wróciła","it":"wróciło","we":"wróciliśmy","they":"wrócili"},
+      "fut":{"I":"będę wracał","you":"będziesz wracał","he":"będzie wracał","she":"będzie wracała","it":"będzie wracało","we":"będziemy wracali","they":"będą wracali"}
     }
   }
 ]
