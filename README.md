@@ -1,12 +1,13 @@
-# Analiza korpusu językowego
+# Analiza korpusu językowego i aplikacja do nauki języka
 
-Projekt służy do podstawowej analizy korpusu tekstowego wybranego języka.  
+Projekt służy do podstawowej analizy korpusu tekstowego wybranego języka oraz oferuje prostą aplikację webową do nauki budowy zdań w języku angielskim.  
 Obejmuje:
 
 - analizę częstotliwości słów,
 - wizualizację prawa Zipfa,
 - budowę grafu współwystępowania słów (bigramy),
-- ekstrakcję najczęstszych rzeczowników przy użyciu NLP.
+- ekstrakcję najczęstszych rzeczowników przy użyciu NLP,
+- interaktywną aplikację do generowania zdań w czasach prostych (Present / Past / Future Simple).
 
 Projekt był tworzony na potrzeby zajęć akademickich.
 
@@ -14,6 +15,7 @@ Projekt był tworzony na potrzeby zajęć akademickich.
 ## Struktura repozytorium
 
 ```
+app_learning/    # Aplikacja webowa do nauki języka
 corpus/          # Folder z korpusami tekstowymi (txt)
 results/         # Folder z wynikami analizy
 scripts/         # Skrypty analityczne
@@ -21,6 +23,30 @@ scripts/         # Skrypty analityczne
   frequency.py   # Analiza częstotliwości słów i prawo Zipfa
   top_nouns.py   # Ekstrakcja najczęstszych rzeczowników przy użyciu NLP
 ```
+
+## App Learning – interaktywna aplikacja do nauki języka
+
+Folder `app_learning/` zawiera prostą aplikację webową typu **Sentence Builder**, która umożliwia generowanie zdań w języku angielskim i ich tłumaczeń na język polski.
+
+**Funkcjonalności:**
+
+- Budowanie zdań w czasach prostych: Present / Past / Future Simple
+- Obsługa typów zdań: Affirmative / Negative / Question
+- Wybór podmiotu, czasownika, rzeczownika, liczby i opcjonalnie przymiotnika
+- Losowanie zdań
+- Automatyczne generowanie tłumaczenia na język polski
+
+**Pliki:**
+
+* `index.html` – interfejs aplikacji
+* `style.css` – style strony
+* `nouns.json` / `verbs.json` – baza danych słów
+
+**Uruchomienie lokalne:**
+
+1. Otwórz `app_learning/index.html` w przeglądarce.
+2. Aplikacja załaduje dane z `nouns.json` i `verbs.json`.
+3. Wybierz parametry zdania i kliknij **GENERUJ ZDANIE** lub **Losuj**.
 
 
 ## Dane wejściowe
@@ -97,6 +123,9 @@ python scripts/top_nouns.py lt
   ```bash
   pip install -r requirements.txt
   ```
+
+- Przeglądarka internetowa (do `app_learning`)
+
 - Po pierwszym uruchomieniu `top_nouns.py` model językowy zostanie automatycznie pobrany.
 
 

@@ -3,7 +3,7 @@
     "en": {"base":"be","third":"is","past":"was"},
     "pl": {
       "pres":{"I":"jestem","you":"jesteś","he":"jest","she":"jest","it":"jest","we":"jesteśmy","they":"są"},
-      "past":{"I":"byłem","you":"byłeś","he":"był","she":"była","it":"było","we":"byliśmy","they":"byli"},
+      "past":{"I":"byłem/byłam","you":"byłeś/byłaś","he":"był","she":"była","it":"było","we":"byliśmy/byłyśmy","they":"byli"},
       "fut":{"I":"będę","you":"będziesz","he":"będzie","she":"będzie","it":"będzie","we":"będziemy","they":"będą"}
     }
   },
@@ -11,47 +11,47 @@
     "en": {"base":"have","third":"has","past":"had"},
     "pl": {
       "pres":{"I":"mam","you":"masz","he":"ma","she":"ma","it":"ma","we":"mamy","they":"mają"},
-      "past":{"I":"miałem","you":"miałeś","he":"miał","she":"miała","it":"miało","we":"mieliśmy","they":"mieli"},
-      "fut":{"I":"będę miał","you":"będziesz miał","he":"będzie miał","she":"będzie miała","it":"będzie miało","we":"będziemy mieli","they":"będą mieli"}
+      "past":{"I":"miałem/miałam","you":"miałeś/miałaś","he":"miał","she":"miało","it":"miał","we":"mieliśmy/miałyśmy","they":"mieli"},
+      "fut":{"I":"będę mieć","you":"będziesz mieć","he":"będzie mieć","she":"będzie mieć","it":"będzie mieć","we":"będziemy mieć","they":"będą mieć"}
     }
   },
   {
     "en": {"base":"do","third":"does","past":"did"},
     "pl": {
       "pres":{"I":"robię","you":"robisz","he":"robi","she":"robi","it":"robi","we":"robimy","they":"robią"},
-      "past":{"I":"robiłem","you":"robiłeś","he":"robił","she":"robiła","it":"robiło","we":"robiliśmy","they":"robili"},
-      "fut":{"I":"będę robił","you":"będziesz robił","he":"będzie robił","she":"będzie robiła","it":"będzie robiło","we":"będziemy robili","they":"będą robili"}
+      "past":{"I":"robiłem/robiłam","you":"robiłeś/robiłaś","he":"robił","she":"robiła","it":"robiło","we":"robiliśmy/robiłyśmy","they":"robili"},
+      "fut":{"I":"będę robić","you":"będziesz robić","he":"będzie robić","she":"będzie robić","it":"będzie robić","we":"będziemy robić","they":"będą robić"}
     }
   },
   {
     "en": {"base":"say","third":"says","past":"said"},
     "pl": {
       "pres":{"I":"mówię","you":"mówisz","he":"mówi","she":"mówi","it":"mówi","we":"mówimy","they":"mówią"},
-      "past":{"I":"mówiłem","you":"mówiłeś","he":"mówił","she":"mówiła","it":"mówiło","we":"mówiliśmy","they":"mówili"},
-      "fut":{"I":"będę mówił","you":"będziesz mówił","he":"będzie mówił","she":"będzie mówiła","it":"będzie mówiło","we":"będziemy mówili","they":"będą mówili"}
+      "past":{"I":"mówiłem/mówiłam","you":"mówiłeś/mówiłaś","he":"mówił","she":"mówiła","it":"mówiło","we":"mówiliśmy/mówiłyśmy","they":"mówili"},
+      "fut":{"I":"będę mówić","you":"będziesz mówić","he":"będzie mówić","she":"będzie mówić","it":"będzie mówić","we":"będziemy mówić","they":"będą mówić"}
     }
   },
   {
     "en": {"base":"get","third":"gets","past":"got"},
     "pl": {
       "pres":{"I":"dostaję","you":"dostajesz","he":"dostaje","she":"dostaje","it":"dostaje","we":"dostajemy","they":"dostają"},
-      "past":{"I":"dostałem","you":"dostałeś","he":"dostał","she":"dostała","it":"dostało","we":"dostaliśmy","they":"dostali"},
-      "fut":{"I":"będę dostawał","you":"będziesz dostawał","he":"będzie dostawał","she":"będzie dostawała","it":"będzie dostawało","we":"będziemy dostawali","they":"będą dostawali"}
+      "past":{"I":"dostałem/dostałam","you":"dostałeś/dostałaś","he":"dostał","she":"dostała","it":"dostało","we":"dostaliśmy/dostałyśmy","they":"dostali"},
+      "fut":{"I":"będę dostawać","you":"będziesz dostawać","he":"będzie dostawać","she":"będzie dostawać","it":"będzie dostawać","we":"będziemy dostawać","they":"będą dostawać"}
     }
   },
   {
     "en": {"base":"make","third":"makes","past":"made"},
     "pl": {
       "pres":{"I":"robię","you":"robisz","he":"robi","she":"robi","it":"robi","we":"robimy","they":"robią"},
-      "past":{"I":"zrobiłem","you":"zrobiłeś","he":"zrobił","she":"zrobiła","it":"zrobiło","we":"zrobiliśmy","they":"zrobili"},
-      "fut":{"I":"będę robił","you":"będziesz robił","he":"będzie robił","she":"będzie robiła","it":"będzie robiło","we":"będziemy robili","they":"będą robili"}
+      "past":{"I":"zrobiłem/zrobiłam","you":"zrobiłeś/zrobiłaś","he":"zrobił","she":"zrobiła","it":"zrobiło","we":"zrobiliśmy/zrobiłyśmy","they":"zrobili"},
+      "fut":{"I":"będę robić","you":"będziesz robić","he":"będzie robić","she":"będzie robić","it":"będzie robić","we":"będziemy robić","they":"będą robić"}
     }
   },
   {
     "en": {"base":"go","third":"goes","past":"went"},
     "pl": {
       "pres":{"I":"idę","you":"idziesz","he":"idzie","she":"idzie","it":"idzie","we":"idziemy","they":"idą"},
-      "past":{"I":"poszedłem","you":"poszedłeś","he":"poszedł","she":"poszła","it":"poszło","we":"poszliśmy","they":"poszli"},
+      "past":{"I":"poszedłem/poszłam","you":"poszedłeś/poszłaś","he":"poszedł","she":"poszła","it":"poszło","we":"poszliśmy/poszłyśmy","they":"poszli"},
       "fut":{"I":"pójdę","you":"pójdziesz","he":"pójdzie","she":"pójdzie","it":"pójdzie","we":"pójdziemy","they":"pójdą"}
     }
   },
@@ -59,24 +59,112 @@
     "en": {"base":"know","third":"knows","past":"knew"},
     "pl": {
       "pres":{"I":"znam","you":"znasz","he":"zna","she":"zna","it":"zna","we":"znamy","they":"znają"},
-      "past":{"I":"znałem","you":"znałeś","he":"znał","she":"znała","it":"znało","we":"znaliśmy","they":"znali"},
-      "fut":{"I":"będę znał","you":"będziesz znał","he":"będzie znał","she":"będzie znała","it":"będzie znało","we":"będziemy znali","they":"będą znali"}
+      "past":{"I":"znałem/znałam","you":"znałeś/znalaś","he":"znał","she":"znała","it":"znało","we":"znaliśmy/znałyśmy","they":"znali"},
+      "fut":{"I":"będę znać","you":"będziesz znać","he":"będzie znać","she":"będzie znać","it":"będzie znać","we":"będziemy znać","they":"będą znać"}
     }
   },
   {
     "en": {"base":"think","third":"thinks","past":"thought"},
     "pl": {
       "pres":{"I":"myślę","you":"myślisz","he":"myśli","she":"myśli","it":"myśli","we":"myślimy","they":"myślą"},
-      "past":{"I":"myślałem","you":"myślałeś","he":"myślał","she":"myślała","it":"myślało","we":"myśleliśmy","they":"myśleli"},
-      "fut":{"I":"będę myślał","you":"będziesz myślał","he":"będzie myślał","she":"będzie myślała","it":"będzie myślało","we":"będziemy myśleli","they":"będą myśleli"}
+      "past":{"I":"myślałem/myślałam","you":"myślałeś/myślałaś","he":"myślał","she":"myślała","it":"myślało","we":"myśleliśmy/myślałyśmy","they":"myśleli"},
+      "fut":{"I":"będę myśleć","you":"będziesz myśleć","he":"będzie myśleć","she":"będzie myśleć","it":"będzie myśleć","we":"będziemy myśleć","they":"będą myśleć"}
     }
   },
   {
     "en": {"base":"take","third":"takes","past":"took"},
     "pl": {
-      "pres":{"I":"biorę","you":"bierzesz","he":"bierze","she":"bierze","it":"bierze","we":"bierzemy","they":"bierzą"},
-      "past":{"I":"wziąłem","you":"wziąłeś","he":"wziął","she":"wzięła","it":"wzięło","we":"wzięliśmy","they":"wzięli"},
-      "fut":{"I":"będę brał","you":"będziesz brał","he":"będzie brał","she":"będzie brała","it":"będzie brało","we":"będziemy brali","they":"będą brali"}
+      "pres":{"I":"biorę","you":"bierzesz","he":"bierze","she":"bierze","it":"bierze","we":"bierzemy","they":"biorą"},
+      "past":{"I":"wziąłem/wzięłam","you":"wziąłeś/wzięłaś","he":"wziął","she":"wzięła","it":"wzięło","we":"wzięliśmy/wzięłyśmy","they":"wzięli"},
+      "fut":{"I":"będę brać","you":"będziesz brać","he":"będzie brać","she":"będzie brać","it":"będzie brać","we":"będziemy brać","they":"będą brać"}
+    }
+  },
+  {
+    "en": {"base":"see","third":"sees","past":"saw"},
+    "pl": {
+      "pres":{"I":"widzę","you":"widzisz","he":"widzi","she":"widzi","it":"widzi","we":"widzimy","they":"widzą"},
+      "past":{"I":"widziałem/widziałam","you":"widziałeś/widziałaś","he":"widział","she":"widziała","it":"widziało","we":"widzieliśmy/widziałyśmy","they":"widzieli"},
+      "fut":{"I":"będę widzieć","you":"będziesz widzieć","he":"będzie widzieć","she":"będzie widzieć","it":"będzie widzieć","we":"będziemy widzieć","they":"będą widzieć"}
+    }
+  },
+  {
+    "en": {"base":"come","third":"comes","past":"came"},
+    "pl": {
+      "pres":{"I":"przychodzę","you":"przychodzisz","he":"przychodzi","she":"przychodzi","it":"przychodzi","we":"przychodzimy","they":"przychodzą"},
+      "past":{"I":"przyszedłem/przyszłam","you":"przyszedłeś/przyszłaś","he":"przyszedł","she":"przyszła","it":"przyszło","we":"przyszliśmy/przyszłyśmy","they":"przyszli"},
+      "fut":{"I":"będę przychodzić","you":"będziesz przychodzić","he":"będzie przychodzić","she":"będzie przychodzić","it":"będzie przychodzić","we":"będziemy przychodzić","they":"będą przychodzić"}
+    }
+  },
+  {
+    "en": {"base":"want","third":"wants","past":"wanted"},
+    "pl": {
+      "pres":{"I":"chcę","you":"chcesz","he":"chce","she":"chce","it":"chce","we":"chcemy","they":"chcą"},
+      "past":{"I":"chciałem/chciałam","you":"chciałeś/chciałaś","he":"chciał","she":"chciała","it":"chciało","we":"chcieliśmy/chciałyśmy","they":"chcieli"},
+      "fut":{"I":"będę chcieć","you":"będziesz chcieć","he":"będzie chcieć","she":"będzie chcieć","it":"będzie chcieć","we":"będziemy chcieć","they":"będą chcieć"}
+    }
+  },
+  {
+    "en": {"base":"look","third":"looks","past":"looked"},
+    "pl": {
+      "pres":{"I":"patrzę","you":"patrzysz","he":"patrzy","she":"patrzy","it":"patrzy","we":"patrzymy","they":"patrzą"},
+      "past":{"I":"patrzyłem/patrzyłam","you":"patrzyłeś/patrzyłaś","he":"patrzył","she":"patrzyła","it":"patrzyło","we":"patrzyliśmy/patrzyłyśmy","they":"patrzyli"},
+      "fut":{"I":"będę patrzeć","you":"będziesz patrzeć","he":"będzie patrzeć","she":"będzie patrzeć","it":"będzie patrzeć","we":"będziemy patrzeć","they":"będą patrzeć"}
+    }
+  },
+  {
+    "en": {"base":"use","third":"uses","past":"used"},
+    "pl": {
+      "pres":{"I":"używam","you":"używasz","he":"używa","she":"używa","it":"używa","we":"używamy","they":"używają"},
+      "past":{"I":"używałem/używałam","you":"używałeś/używałaś","he":"używał","she":"używała","it":"używało","we":"używaliśmy/używałyśmy","they":"używali"},
+      "fut":{"I":"będę używać","you":"będziesz używać","he":"będzie używać","she":"będzie używać","it":"będzie używać","we":"będziemy używać","they":"będą używać"}
+    }
+  },
+  {
+    "en": {"base":"find","third":"finds","past":"found"},
+    "pl": {
+      "pres":{"I":"znajduję","you":"znajdujesz","he":"znajduje","she":"znajduje","it":"znajduje","we":"znajdujemy","they":"znajdują"},
+      "past":{"I":"znalazłem/znalazłam","you":"znalazłeś/znalazłaś","he":"znalazł","she":"znalazła","it":"znalazło","we":"znaleźliśmy/znalazłyśmy","they":"znaleźli"},
+      "fut":{"I":"będę znajdować","you":"będziesz znajdować","he":"będzie znajdować","she":"będzie znajdować","it":"będzie znajdować","we":"będziemy znajdować","they":"będą znajdować"}
+    }
+  },
+  {
+    "en": {"base":"give","third":"gives","past":"gave"},
+    "pl": {
+      "pres":{"I":"daję","you":"dajesz","he":"daje","she":"daje","it":"daje","we":"dajemy","they":"dają"},
+      "past":{"I":"dałem/dałam","you":"dałeś/dałaś","he":"dał","she":"dała","it":"dało","we":"daliśmy/dałyśmy","they":"dali"},
+      "fut":{"I":"będę dawać","you":"będziesz dawać","he":"będzie dawać","she":"będzie dawać","it":"będzie dawać","we":"będziemy dawać","they":"będą dawać"}
+    }
+  },
+  {
+    "en": {"base":"tell","third":"tells","past":"told"},
+    "pl": {
+      "pres":{"I":"mówię","you":"mówisz","he":"mówi","she":"mówi","it":"mówi","we":"mówimy","they":"mówią"},
+      "past":{"I":"powiedziałem/powiedziałam","you":"powiedziałeś/powiedziałaś","he":"powiedział","she":"powiedziała","it":"powiedziało","we":"powiedzieliśmy/powiedziałyśmy","they":"powiedzieli"},
+      "fut":{"I":"będę mówić","you":"będziesz mówić","he":"będzie mówić","she":"będzie mówić","it":"będzie mówić","we":"będziemy mówić","they":"będą mówić"}
+    }
+  },
+  {
+    "en": {"base":"work","third":"works","past":"worked"},
+    "pl": {
+      "pres":{"I":"pracuję","you":"pracujesz","he":"pracuje","she":"pracuje","it":"pracuje","we":"pracujemy","they":"pracują"},
+      "past":{"I":"pracowałem/pracowałam","you":"pracowałeś/pracowałaś","he":"pracował","she":"pracowała","it":"pracowało","we":"pracowaliśmy/pracowałyśmy","they":"pracowali"},
+      "fut":{"I":"będę pracować","you":"będziesz pracować","he":"będzie pracować","she":"będzie pracować","it":"będzie pracować","we":"będziemy pracować","they":"będą pracować"}
+    }
+  },
+  {
+    "en": {"base":"call","third":"calls","past":"called"},
+    "pl": {
+      "pres":{"I":"dzwonię","you":"dzwonisz","he":"dzwoni","she":"dzwoni","it":"dzwoni","we":"dzwonimy","they":"dzwonią"},
+      "past":{"I":"zadzwoniłem/zadzwoniłam","you":"zadzwoniłeś/zadzwoniłaś","he":"zadzwonił","she":"zadzwoniła","it":"zadzwoniło","we":"zadzwoniliśmy/zadzwoniłyśmy","they":"zadzwonili"},
+      "fut":{"I":"będę dzwonić","you":"będziesz dzwonić","he":"będzie dzwonić","she":"będzie dzwonić","it":"będzie dzwonić","we":"będziemy dzwonić","they":"będą dzwonić"}
+    }
+  },
+  {
+    "en": {"base":"try","third":"tries","past":"tried"},
+    "pl": {
+      "pres":{"I":"próbuję","you":"próbujesz","he":"próbuje","she":"próbuje","it":"próbuje","we":"próbujemy","they":"próbują"},
+      "past":{"I":"próbowałem/próbowałam","you":"próbowałeś/próbowałaś","he":"próbował","she":"próbowała","it":"próbowało","we":"próbowaliśmy/próbowałyśmy","they":"próbowali"},
+      "fut":{"I":"będę próbować","you":"będziesz próbować","he":"będzie próbować","she":"będzie próbować","it":"będzie próbować","we":"będziemy próbować","they":"będą próbować"}
     }
   }
 ]
